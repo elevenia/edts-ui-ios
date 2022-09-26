@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "EDTSUI"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.3"
   spec.summary      = "EDTSUI is an iOS SDK for Design Layout"
   spec.description  = "EDTSUI is a library based on iOS Swift language that help developer to design their layout more easier and according to EDTS Design System standardized."
 
@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/elevenia/edts-ui-ios.git", :tag => spec.version }
 
 
-  spec.source_files  = "EDTSUI", "EDTSUI/**/*.{h,m}"
+  spec.source_files  = "EDTSUI", "EDTSUI/**/*"
   spec.resources = ['EDTSUI/**/*.{xib}']
 
   spec.subspec 'Color' do |ss|
@@ -39,7 +39,7 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec 'PopUp' do |ss|
-    ss.source_files = 'EDTSUI/Modules/PopUp/**/*'
+    ss.source_files = 'EDTSUI/Modules/PopUp'
     ss.resources = ['EDTSUI/Modules/PopUp/*.{xib}']
   end
 
