@@ -12,6 +12,7 @@ Pod::Spec.new do |spec|
 
   spec.platform     = :ios
   spec.platform     = :ios, "11.0"
+  spec.swift_version = '5.0'
   
   spec.source       = { :git => "https://github.com/elevenia/edts-ui-ios.git", :tag => spec.version }
 
@@ -35,7 +36,7 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec 'PopUp' do |ss|
-    ss.source_files = 'EDTSUI/Modules/PopUp'
+    ss.source_files = 'EDTSUI/Modules/PopUp/**/*'
   end
 
 end
