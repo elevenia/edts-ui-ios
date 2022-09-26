@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/elevenia/edts-ui-ios.git", :tag => spec.version }
 
 
-  spec.source_files  = "EDTSUI", "EDTSUI/**/*"
+  spec.source_files  = "EDTSUI", "EDTSUI/**/*.{h,m}"
   spec.resources = ['EDTSUI/**/*.{xib}']
 
   spec.subspec 'Color' do |ss|
