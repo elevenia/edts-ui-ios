@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EDTSOTP" customModule="EDTSUI" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="uLT-kk-Unc"/>
+                <outlet property="stackView" destination="8AV-T1-VDf" id="iyK-EO-uZb"/>
+                <outlet property="textField1" destination="AfC-Qu-t6a" id="RG2-e7-Llu"/>
+                <outlet property="textField2" destination="HEG-xk-Zsa" id="IiB-a6-Wad"/>
+                <outlet property="textField3" destination="S7H-Eu-frz" id="uMm-VM-QQf"/>
+                <outlet property="textField4" destination="6L4-Zc-M9l" id="ncN-p3-wsc"/>
+                <outlet property="textField5" destination="Ojc-G1-Aaf" id="NZA-7t-7lf"/>
+                <outlet property="textField6" destination="E5g-BC-u5j" id="xrR-7G-ysO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="102"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8AV-T1-VDf">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="102"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFl-Tl-Bwc" userLabel="spacer">
+                            <rect key="frame" x="0.0" y="0.0" width="62.5" height="102"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AfC-Qu-t6a" userLabel="textField1" customClass="EDTSOTPDigit" customModule="EDTSUI" customModuleProvider="target">
+                            <rect key="frame" x="70.5" y="0.0" width="62" height="102"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HEG-xk-Zsa" userLabel="textField2" customClass="EDTSOTPDigit" customModule="EDTSUI" customModuleProvider="target">
+                            <rect key="frame" x="140.5" y="0.0" width="62.5" height="102"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S7H-Eu-frz" userLabel="textField3" customClass="EDTSOTPDigit" customModule="EDTSUI" customModuleProvider="target">
+                            <rect key="frame" x="211" y="0.0" width="62.5" height="102"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6L4-Zc-M9l" userLabel="textField4" customClass="EDTSOTPDigit" customModule="EDTSUI" customModuleProvider="target">
+                            <rect key="frame" x="281.5" y="0.0" width="62" height="102"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ojc-G1-Aaf" userLabel="textField5" customClass="EDTSOTPDigit" customModule="EDTSUI" customModuleProvider="target">
+                            <rect key="frame" x="347.5" y="0.0" width="0.0" height="102"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E5g-BC-u5j" userLabel="textField6" customClass="EDTSOTPDigit" customModule="EDTSUI" customModuleProvider="target">
+                            <rect key="frame" x="347.5" y="0.0" width="0.0" height="102"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYA-O0-6NS" userLabel="spacer">
+                            <rect key="frame" x="351.5" y="0.0" width="62.5" height="102"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="8AV-T1-VDf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6hm-xf-fvM"/>
+                <constraint firstItem="8AV-T1-VDf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ei3-0g-FsD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="8AV-T1-VDf" secondAttribute="bottom" id="igU-f2-2CF"/>
+                <constraint firstAttribute="trailing" secondItem="8AV-T1-VDf" secondAttribute="trailing" id="xlu-qy-nL4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-171.42857142857142"/>
+        </view>
+    </objects>
+</document>
