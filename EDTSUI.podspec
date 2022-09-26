@@ -18,6 +18,7 @@ Pod::Spec.new do |spec|
 
 
   spec.source_files  = "EDTSUI", "EDTSUI/**/*.{h,m}"
+  spec.resources = ['EDTSUI/**/*.{xib}']
 
   spec.subspec 'Color' do |ss|
     ss.source_files = 'EDTSUI/Atoms/Color'
@@ -29,14 +30,17 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'OTP' do |ss|
     ss.source_files = 'EDTSUI/Components/OTP'
+    ss.resources = ['EDTSUI/Components/OTP/*.{xib}']
   end
 
   spec.subspec 'Textfield' do |ss|
     ss.source_files = 'EDTSUI/Components/Textfield'
+    ss.resources = ['EDTSUI/Components/Textfield/*.{xib}']
   end
 
   spec.subspec 'PopUp' do |ss|
     ss.source_files = 'EDTSUI/Modules/PopUp/**/*'
+    ss.resources = ['EDTSUI/Modules/PopUp/*.{xib}']
   end
 
 end

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EDTSFont: NSObject {
+open class EDTSFont: NSObject {
     
     override public init() {
         super.init()
