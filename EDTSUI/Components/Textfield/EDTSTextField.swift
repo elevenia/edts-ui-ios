@@ -50,7 +50,7 @@ import UIKit
             return self.textfieldButton.image(for: .normal) ?? UIImage()
         }
         set {
-            self.textfieldButton.setImage(newValue, for: .normal)
+            self.textfieldButton.setImage(newValue.withRenderingMode(.alwaysOriginal), for: .normal)
         }
     }
     
@@ -89,6 +89,16 @@ import UIKit
         }
         set {
             isShowButton = newValue
+            setupContent()
+        }
+    }
+    
+    @IBInspectable var showHelpText: Bool {
+        get {
+            return isShowHelpText
+        }
+        set {
+            isShowHelpText = newValue
             setupContent()
         }
     }
@@ -213,63 +223,100 @@ import UIKit
         }
     }
     
-    @IBInspectable var fontLabel: UIFont {
+    @IBInspectable var labelFontName: String {
         get {
-            return textfieldLabel.font
+            return labelName
         }
         set {
-            textfieldLabel.font = newValue
+            labelName = newValue
+            setupView()
+        }
+    }
+
+    @IBInspectable var labelFontSize: Int {
+        get {
+            return labelSize
+        }
+        set {
+            labelSize = newValue
+            setupView()
         }
     }
     
-    @IBInspectable var fontTextfield: UIFont {
+    @IBInspectable var labelFontColor: UIColor {
         get {
-            return textfieldText.font ?? UIFont.systemFont(ofSize: 12)
+            return labelColor
         }
         set {
-            textfieldText.font = newValue
+            labelColor = newValue
+            setupView()
         }
     }
     
-    @IBInspectable var fontHelpText: UIFont {
+    @IBInspectable var textfieldFontName: String {
         get {
-            return helptext.font
+            return textFieldName
         }
         set {
-            helptext.font = newValue
+            textFieldName = newValue
+            setupView()
         }
     }
     
-    @IBInspectable var colorLabel: UIColor {
+    @IBInspectable var textfieldFontSize: Int {
         get {
-            return textfieldLabel.textColor
+            return textFieldSize
         }
         set {
-            textfieldLabel.textColor = newValue
+            textFieldSize = newValue
+            setupView()
         }
     }
     
-    @IBInspectable var colorTextField: UIColor {
+    @IBInspectable var textfieldFontColor: UIColor {
         get {
-            return textfieldText.textColor ?? UIColor.black
+            return textFieldColor
         }
         set {
-            textfieldText.textColor = newValue
+            textFieldColor = newValue
+            setupView()
         }
     }
     
-    @IBInspectable var colorHelpText: UIColor {
+    @IBInspectable var helptextFontName: String {
         get {
-            return helptext.textColor
+            return helpTextName
         }
         set {
-            helptext.textColor = newValue
+            helpTextName = newValue
+            setupView()
+        }
+    }
+    
+    @IBInspectable var helptextFontSize: Int {
+        get {
+            return helpTextSize
+        }
+        set {
+            helpTextSize = newValue
+            setupView()
+        }
+    }
+    
+    @IBInspectable var helptextFontColor: UIColor {
+        get {
+            return helpTextColor
+        }
+        set {
+            helpTextColor = newValue
+            setupView()
         }
     }
     
     var isShowLabel = false
     var isShowIcon = false
     var isShowButton = false
+    var isShowHelpText = false
     
     var colorBorder = UIColor(red: 220.0/255.0, green: 222.0/255.0, blue: 227.0/255.0, alpha: 1.0)
     var colorBg = UIColor.clear
@@ -291,6 +338,17 @@ import UIKit
     
     var textFieldCornerRadius = 4
     var textFieldBorderWidth = 1
+    var textFieldName = "--"
+    var textFieldSize = 14
+    var textFieldColor = UIColor.black
+    
+    var labelName = "--"
+    var labelSize = 12
+    var labelColor = UIColor.lightGray
+    
+    var helpTextName = "--"
+    var helpTextSize = 10
+    var helpTextColor = UIColor.gray
     
     public var text: String? {
         return textfieldText.text
@@ -321,6 +379,15 @@ import UIKit
         containerTextfield.layer.cornerRadius = CGFloat(textFieldCornerRadius)
         containerTextfield.layer.borderWidth = CGFloat(textFieldBorderWidth)
         containerTextfield.layer.borderColor = borderColor.cgColor
+        
+        textfieldLabel.textColor = labelColor
+        textfieldLabel.font = UIFont(name: labelName, size: CGFloat(labelSize)) ?? UIFont.systemFont(ofSize: CGFloat(labelSize))
+        
+        textfieldText.textColor = textFieldColor
+        textfieldText.font = UIFont(name: textFieldName, size: CGFloat(textFieldSize)) ?? UIFont.systemFont(ofSize: CGFloat(textFieldSize))
+        
+        helptext.textColor = helpTextColor
+        helptext.font = UIFont(name: helpTextName, size: CGFloat(helpTextSize)) ?? UIFont.systemFont(ofSize: CGFloat(helpTextSize))
     }
     
     private func setupContent() {
@@ -354,6 +421,12 @@ import UIKit
             textfieldButton.isHidden = true
             textfieldButtonWidthAnchor.constant = 0
             textfieldButtonTrailingAnchor.constant = 0
+        }
+        
+        if isShowHelpText {
+            helptext.isHidden = false
+        } else {
+            helptext.isHidden = true
         }
     }
     

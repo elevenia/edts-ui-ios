@@ -16,6 +16,11 @@
 		F26010BB28D03B580097FD95 /* EDTSPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = F26010B828D03B580097FD95 /* EDTSPopUp.xib */; };
 		F26010BC28D03B580097FD95 /* EDTSPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26010B928D03B580097FD95 /* EDTSPopUp.swift */; };
 		F26010C728D03ECB0097FD95 /* EDTSPopUpStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26010C628D03ECB0097FD95 /* EDTSPopUpStyle.swift */; };
+		F263E67328E2A5F60084A3D6 /* EDTSOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F263E67228E2A5F60084A3D6 /* EDTSOnboarding.swift */; };
+		F263E67528E2A60E0084A3D6 /* EDTSOnboarding.xib in Resources */ = {isa = PBXBuildFile; fileRef = F263E67428E2A60E0084A3D6 /* EDTSOnboarding.xib */; };
+		F263E67728E2A8320084A3D6 /* EDTSOnboardingContent.xib in Resources */ = {isa = PBXBuildFile; fileRef = F263E67628E2A8320084A3D6 /* EDTSOnboardingContent.xib */; };
+		F263E67928E2A83C0084A3D6 /* EDTSOnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F263E67828E2A83C0084A3D6 /* EDTSOnboardingContent.swift */; };
+		F263E67B28E2A9CE0084A3D6 /* EDTSOnboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F263E67A28E2A9CE0084A3D6 /* EDTSOnboardingData.swift */; };
 		F297DC7028D96C500096D2FA /* EDTSTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = F297DC6F28D96C500096D2FA /* EDTSTextField.xib */; };
 		F297DC7228D96C830096D2FA /* EDTSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297DC7128D96C830096D2FA /* EDTSTextField.swift */; };
 /* End PBXBuildFile section */
@@ -31,6 +36,11 @@
 		F26010B828D03B580097FD95 /* EDTSPopUp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTSPopUp.xib; sourceTree = "<group>"; };
 		F26010B928D03B580097FD95 /* EDTSPopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSPopUp.swift; sourceTree = "<group>"; };
 		F26010C628D03ECB0097FD95 /* EDTSPopUpStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSPopUpStyle.swift; sourceTree = "<group>"; };
+		F263E67228E2A5F60084A3D6 /* EDTSOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSOnboarding.swift; sourceTree = "<group>"; };
+		F263E67428E2A60E0084A3D6 /* EDTSOnboarding.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EDTSOnboarding.xib; sourceTree = "<group>"; };
+		F263E67628E2A8320084A3D6 /* EDTSOnboardingContent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EDTSOnboardingContent.xib; sourceTree = "<group>"; };
+		F263E67828E2A83C0084A3D6 /* EDTSOnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSOnboardingContent.swift; sourceTree = "<group>"; };
+		F263E67A28E2A9CE0084A3D6 /* EDTSOnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSOnboardingData.swift; sourceTree = "<group>"; };
 		F297DC6F28D96C500096D2FA /* EDTSTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EDTSTextField.xib; sourceTree = "<group>"; };
 		F297DC7128D96C830096D2FA /* EDTSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,25 +130,30 @@
 		F26010B528D03B580097FD95 /* PopUp */ = {
 			isa = PBXGroup;
 			children = (
-				F26010B628D03B580097FD95 /* Models */,
+				F26010C628D03ECB0097FD95 /* EDTSPopUpStyle.swift */,
 				F26010B928D03B580097FD95 /* EDTSPopUp.swift */,
 				F26010B828D03B580097FD95 /* EDTSPopUp.xib */,
 			);
 			path = PopUp;
 			sourceTree = "<group>";
 		};
-		F26010B628D03B580097FD95 /* Models */ = {
+		F263E67128E2A57F0084A3D6 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				F26010C628D03ECB0097FD95 /* EDTSPopUpStyle.swift */,
+				F263E67228E2A5F60084A3D6 /* EDTSOnboarding.swift */,
+				F263E67428E2A60E0084A3D6 /* EDTSOnboarding.xib */,
+				F263E67828E2A83C0084A3D6 /* EDTSOnboardingContent.swift */,
+				F263E67628E2A8320084A3D6 /* EDTSOnboardingContent.xib */,
+				F263E67A28E2A9CE0084A3D6 /* EDTSOnboardingData.swift */,
 			);
-			path = Models;
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		F2F10B9128D4485400985AE8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				F26010B528D03B580097FD95 /* PopUp */,
+				F263E67128E2A57F0084A3D6 /* Onboarding */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -224,7 +239,9 @@
 			files = (
 				F26010BB28D03B580097FD95 /* EDTSPopUp.xib in Resources */,
 				F297DC7028D96C500096D2FA /* EDTSTextField.xib in Resources */,
+				F263E67528E2A60E0084A3D6 /* EDTSOnboarding.xib in Resources */,
 				F230C22828DD909A0056ADBE /* EDTSOTP.xib in Resources */,
+				F263E67728E2A8320084A3D6 /* EDTSOnboardingContent.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +253,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F26010B428D038F00097FD95 /* EDTSFont.swift in Sources */,
+				F263E67928E2A83C0084A3D6 /* EDTSOnboardingContent.swift in Sources */,
+				F263E67B28E2A9CE0084A3D6 /* EDTSOnboardingData.swift in Sources */,
 				F297DC7228D96C830096D2FA /* EDTSTextField.swift in Sources */,
+				F263E67328E2A5F60084A3D6 /* EDTSOnboarding.swift in Sources */,
 				F26010BC28D03B580097FD95 /* EDTSPopUp.swift in Sources */,
 				F26010C728D03ECB0097FD95 /* EDTSPopUpStyle.swift in Sources */,
 				F230C22C28DD92620056ADBE /* EDTSOTPDigit.swift in Sources */,
