@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-<a href="https://cocoapods.org/pods/EDTSTracker"><img src="https://img.shields.io/cocoapods/v/EDTSUI.svg?style=flat"></a>
-<a href="https://cocoapods.org/pods/EDTSTracker"><img src="https://img.shields.io/cocoapods/p/EDTSUI.svg?style=flat"></a>
+<a href="https://cocoapods.org/pods/EDTSUI"><img src="https://img.shields.io/cocoapods/v/EDTSUI.svg?style=flat"></a>
+<a href="https://cocoapods.org/pods/EDTSUI"><img src="https://img.shields.io/cocoapods/p/EDTSUI.svg?style=flat"></a>
 </p>
 
 EDTSUI is a library based on iOS Swift language that help developer to design their layout more easier and according to EDTS Design System standardized. 
