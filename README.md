@@ -23,6 +23,7 @@ EDTSUI is a library based on iOS Swift language that help developer to design th
 - [x] OTP
 - [x] TextField
 - [x] PopUp
+- [x] Onboarding
 
 ## Installation
 
