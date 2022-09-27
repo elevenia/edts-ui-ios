@@ -13,7 +13,6 @@ EDTSUI is a library based on iOS Swift language that help developer to design th
 
 - [x] Easy to applied inside Xib.
 - [x] Customizable UI Layout.
-- [x] Available  
 - [x] Swift 5 support.
 
 ## Contents
