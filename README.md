@@ -7,7 +7,7 @@
 <a href="https://cocoapods.org/pods/EDTSUI"><img src="https://img.shields.io/cocoapods/p/EDTSUI.svg?style=flat"></a>
 </p>
 
-EDTSUI is a library based on iOS Swift language that help developer to design their layout more easier and according to EDTS Design System standardized. 
+EDTSUI is an iOS SDK that help developer to design user interface based on EDTS Design System. 
 
 ## Features
 
