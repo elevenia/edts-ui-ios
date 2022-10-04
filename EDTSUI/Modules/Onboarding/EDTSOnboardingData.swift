@@ -7,15 +7,15 @@
 
 import UIKit
 
-public struct EDTSOnboardingData {
+public struct EDTSOnboardingData: Codable {
     var image: String
     var title: String
-    var message: String
+    var description: String
     
-    public init(image: String, title: String, message: String) {
+    public init(image: String, title: String, description: String) {
         self.image = image
         self.title = title
-        self.message = message
+        self.description = description
     }
 }
 

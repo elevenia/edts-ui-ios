@@ -11,13 +11,13 @@ import UIKit
 
     @IBOutlet var contentView: UIView!
     
-    @IBOutlet weak var containerTextfield: UIView!
-    @IBOutlet weak var textfieldIcon: UIImageView!
-    @IBOutlet weak var textfieldButton: UIButton!
-    @IBOutlet weak var textfieldLabel: UILabel!
-    @IBOutlet weak var textfieldText: UITextField!
+    @IBOutlet weak public var containerTextfield: UIView!
+    @IBOutlet weak public var textfieldIcon: UIImageView!
+    @IBOutlet weak public var textfieldButton: UIButton!
+    @IBOutlet weak public var textfieldLabel: UILabel!
+    @IBOutlet weak public var textfieldText: UITextField!
     
-    @IBOutlet weak var helptext: UILabel!
+    @IBOutlet weak public var helptext: UILabel!
     
     @IBOutlet weak var textfieldIconWidthAnchor: NSLayoutConstraint!
     @IBOutlet weak var textfieldButtonWidthAnchor: NSLayoutConstraint!
@@ -54,12 +54,30 @@ import UIKit
         }
     }
     
+    @IBInspectable var placeholder: String {
+        get {
+            return self.textfieldText.placeholder ?? ""
+        }
+        set {
+            self.textfieldText.placeholder = newValue
+        }
+    }
+    
     @IBInspectable var message: String {
         get {
             return helptext.text ?? ""
         }
         set {
             helptext.text = newValue
+        }
+    }
+    
+    @IBInspectable var text: String {
+        get {
+            return self.textfieldText.text ?? ""
+        }
+        set {
+            self.textfieldText.text = newValue
         }
     }
     
@@ -349,10 +367,6 @@ import UIKit
     var helpTextName = "--"
     var helpTextSize = 10
     var helpTextColor = UIColor.gray
-    
-    public var text: String? {
-        return textfieldText.text
-    }
     
     override public init(frame: CGRect) {
         super.init(frame: frame)

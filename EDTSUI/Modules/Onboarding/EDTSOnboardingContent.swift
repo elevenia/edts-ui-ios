@@ -78,7 +78,7 @@ class EDTSOnboardingContent: UIView {
     private func loadData() {
         if data != nil {
             title.text = data?.title
-            message.text = data?.message
+            message.text = data?.description
             image.image = UIImage(named: data?.image ?? "")
         }
     }

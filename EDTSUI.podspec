@@ -1,9 +1,9 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "EDTSUI"
-  spec.version      = "0.0.5"
-  spec.summary      = "EDTSUI is an iOS SDK for Design Layout"
-  spec.description  = "EDTSUI is a library based on iOS Swift language that help developer to design their layout more easier and according to EDTS Design System standardized."
+  spec.version      = "0.0.6"
+  spec.summary      = "EDTSUI is an iOS SDK for design user interface"
+  spec.description  = "EDTSUI is an iOS SDK that help developer to design user interface based on EDTS Design System."
 
   spec.homepage     = "https://github.com/elevenia/edts-ui-ios"
   spec.license      = { :type => "MIT", :file => "LICENSE" }

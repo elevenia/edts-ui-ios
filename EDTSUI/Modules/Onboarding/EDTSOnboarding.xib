@@ -21,6 +21,9 @@
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7K-jr-F1p">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="435"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="pIW-1T-wFp"/>
+                    </connections>
                 </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

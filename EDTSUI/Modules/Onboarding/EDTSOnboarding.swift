@@ -151,6 +151,7 @@ public protocol EDTSOnboardingDelegate {
         }
         
         scrollView.contentSize = CGSize(width: scrollView.frame.self.width * CGFloat(index), height: scrollView.frame.size.height)
+        scrollView.contentInset.bottom = -100 //Disable Vertical Scroll
     }
 }
 
