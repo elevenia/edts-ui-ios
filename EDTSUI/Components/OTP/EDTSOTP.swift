@@ -246,6 +246,7 @@ public protocol EDTSOTPDelegate {
     private func setupView() {
         textField1.delegate = self
         textField1.digitDelegate = self
+        textField1.keyboardType = .numberPad
         textField1.layer.borderColor = borderColor.cgColor
         textField1.layer.borderWidth = CGFloat(textfieldBorderWidth)
         textField1.layer.cornerRadius = CGFloat(textfieldCornerRadius)
@@ -254,6 +255,7 @@ public protocol EDTSOTPDelegate {
         
         textField2.delegate = self
         textField2.digitDelegate = self
+        textField2.keyboardType = .numberPad
         textField2.layer.borderColor = borderColor.cgColor
         textField2.layer.borderWidth = CGFloat(textfieldBorderWidth)
         textField2.layer.cornerRadius = CGFloat(textfieldCornerRadius)
@@ -262,6 +264,7 @@ public protocol EDTSOTPDelegate {
         
         textField3.delegate = self
         textField3.digitDelegate = self
+        textField3.keyboardType = .numberPad
         textField3.layer.borderColor = borderColor.cgColor
         textField3.layer.borderWidth = CGFloat(textfieldBorderWidth)
         textField3.layer.cornerRadius = CGFloat(textfieldCornerRadius)
@@ -270,6 +273,7 @@ public protocol EDTSOTPDelegate {
         
         textField4.delegate = self
         textField4.digitDelegate = self
+        textField4.keyboardType = .numberPad
         textField4.layer.borderColor = borderColor.cgColor
         textField4.layer.borderWidth = CGFloat(textfieldBorderWidth)
         textField4.layer.cornerRadius = CGFloat(textfieldCornerRadius)
@@ -278,6 +282,7 @@ public protocol EDTSOTPDelegate {
         
         textField5.delegate = self
         textField5.digitDelegate = self
+        textField5.keyboardType = .numberPad
         textField5.layer.borderColor = borderColor.cgColor
         textField5.layer.borderWidth = CGFloat(textfieldBorderWidth)
         textField5.layer.cornerRadius = CGFloat(textfieldCornerRadius)
@@ -286,6 +291,7 @@ public protocol EDTSOTPDelegate {
         
         textField6.delegate = self
         textField6.digitDelegate = self
+        textField6.keyboardType = .numberPad
         textField6.layer.borderColor = borderColor.cgColor
         textField6.layer.borderWidth = CGFloat(textfieldBorderWidth)
         textField6.layer.cornerRadius = CGFloat(textfieldCornerRadius)

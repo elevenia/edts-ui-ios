@@ -23,6 +23,8 @@
 		F263E67B28E2A9CE0084A3D6 /* EDTSOnboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F263E67A28E2A9CE0084A3D6 /* EDTSOnboardingData.swift */; };
 		F297DC7028D96C500096D2FA /* EDTSTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = F297DC6F28D96C500096D2FA /* EDTSTextField.xib */; };
 		F297DC7228D96C830096D2FA /* EDTSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297DC7128D96C830096D2FA /* EDTSTextField.swift */; };
+		F2E9DF8928ED709700EB301F /* EDTSStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E9DF8828ED709700EB301F /* EDTSStepper.swift */; };
+		F2E9DF8B28ED70A500EB301F /* EDTSStepper.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2E9DF8A28ED70A500EB301F /* EDTSStepper.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		F263E67A28E2A9CE0084A3D6 /* EDTSOnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSOnboardingData.swift; sourceTree = "<group>"; };
 		F297DC6F28D96C500096D2FA /* EDTSTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EDTSTextField.xib; sourceTree = "<group>"; };
 		F297DC7128D96C830096D2FA /* EDTSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSTextField.swift; sourceTree = "<group>"; };
+		F2E9DF8828ED709700EB301F /* EDTSStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSStepper.swift; sourceTree = "<group>"; };
+		F2E9DF8A28ED70A500EB301F /* EDTSStepper.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EDTSStepper.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 			children = (
 				F230C22628DD8EEE0056ADBE /* OTP */,
 				F2F10B9228D44BBF00985AE8 /* Textfield */,
+				F2E9DF8728ED6FAD00EB301F /* Stepper */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -147,6 +152,15 @@
 				F263E67A28E2A9CE0084A3D6 /* EDTSOnboardingData.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		F2E9DF8728ED6FAD00EB301F /* Stepper */ = {
+			isa = PBXGroup;
+			children = (
+				F2E9DF8828ED709700EB301F /* EDTSStepper.swift */,
+				F2E9DF8A28ED70A500EB301F /* EDTSStepper.xib */,
+			);
+			path = Stepper;
 			sourceTree = "<group>";
 		};
 		F2F10B9128D4485400985AE8 /* Modules */ = {
@@ -238,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F26010BB28D03B580097FD95 /* EDTSPopUp.xib in Resources */,
+				F2E9DF8B28ED70A500EB301F /* EDTSStepper.xib in Resources */,
 				F297DC7028D96C500096D2FA /* EDTSTextField.xib in Resources */,
 				F263E67528E2A60E0084A3D6 /* EDTSOnboarding.xib in Resources */,
 				F230C22828DD909A0056ADBE /* EDTSOTP.xib in Resources */,
@@ -254,6 +269,7 @@
 			files = (
 				F26010B428D038F00097FD95 /* EDTSFont.swift in Sources */,
 				F263E67928E2A83C0084A3D6 /* EDTSOnboardingContent.swift in Sources */,
+				F2E9DF8928ED709700EB301F /* EDTSStepper.swift in Sources */,
 				F263E67B28E2A9CE0084A3D6 /* EDTSOnboardingData.swift in Sources */,
 				F297DC7228D96C830096D2FA /* EDTSTextField.swift in Sources */,
 				F263E67328E2A5F60084A3D6 /* EDTSOnboarding.swift in Sources */,

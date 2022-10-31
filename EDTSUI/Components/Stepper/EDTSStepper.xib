@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EDTSStepper" customModule="EDTSUI" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAdd" destination="cI3-ya-Cdm" id="2OH-xR-7bj"/>
+                <outlet property="btnSubtract" destination="6Cf-bo-Lfp" id="YIB-Ad-rYe"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="ykz-T1-Ztl"/>
+                <outlet property="textfield" destination="BVT-ju-S28" id="QDS-zr-9k2"/>
+                <outlet property="underline" destination="vDv-Fh-DF3" id="3YH-i7-WHy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="167" height="58"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Cf-bo-Lfp">
+                    <rect key="frame" x="0.0" y="13" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="CVC-fr-Y5M"/>
+                        <constraint firstAttribute="height" constant="32" id="GK9-qY-QTe"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="-"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cI3-ya-Cdm">
+                    <rect key="frame" x="135" y="13" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="692-2P-gyL"/>
+                        <constraint firstAttribute="height" constant="32" id="fSk-oc-gkL"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="+"/>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BVT-ju-S28">
+                    <rect key="frame" x="32" y="13" width="103" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="oA6-kB-sko"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vDv-Fh-DF3">
+                    <rect key="frame" x="40" y="44" width="87" height="1"/>
+                    <color key="backgroundColor" red="0.86274509803921573" green="0.87058823529411766" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="QSr-OJ-AuS"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cI3-ya-Cdm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6Li-nx-8BM"/>
+                <constraint firstItem="6Cf-bo-Lfp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="L8a-nZ-qjr"/>
+                <constraint firstAttribute="trailing" secondItem="cI3-ya-Cdm" secondAttribute="trailing" id="NF3-uw-sR2"/>
+                <constraint firstItem="vDv-Fh-DF3" firstAttribute="top" secondItem="BVT-ju-S28" secondAttribute="bottom" constant="-1" id="SRS-Lj-jJ7"/>
+                <constraint firstItem="6Cf-bo-Lfp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Wq9-qa-eBF"/>
+                <constraint firstItem="BVT-ju-S28" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="YIR-Si-azx"/>
+                <constraint firstItem="vDv-Fh-DF3" firstAttribute="leading" secondItem="6Cf-bo-Lfp" secondAttribute="trailing" constant="8" id="acj-TV-25S"/>
+                <constraint firstItem="BVT-ju-S28" firstAttribute="leading" secondItem="6Cf-bo-Lfp" secondAttribute="trailing" id="fqS-mT-Bw1"/>
+                <constraint firstItem="cI3-ya-Cdm" firstAttribute="leading" secondItem="vDv-Fh-DF3" secondAttribute="trailing" constant="8" id="lse-dD-xWD"/>
+                <constraint firstItem="cI3-ya-Cdm" firstAttribute="leading" secondItem="BVT-ju-S28" secondAttribute="trailing" id="qv2-hj-Qth"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-41.304347826086961" y="-186.16071428571428"/>
+        </view>
+    </objects>
+</document>
