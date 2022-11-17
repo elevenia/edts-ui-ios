@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "EDTSUI"
-  spec.version      = "0.0.7"
+  spec.version      = "0.0.8"
   spec.summary      = "EDTSUI is an iOS SDK for design user interface"
   spec.description  = "EDTSUI is an iOS SDK that help developer to design user interface based on EDTS Design System."
 
@@ -51,6 +51,11 @@ Pod::Spec.new do |spec|
   spec.subspec 'Stepper' do |ss|
     ss.source_files = 'EDTSUI/Components/Stepper'
     ss.resources = ['EDTSUI/Components/Stepper/*.{xib}']
+  end
+
+  spec.subspec 'SuccessPage' do |ss|
+    ss.source_files = 'EDTSUI/Modules/SuccessPage'
+    ss.resources = ['EDTSUI/Modules/SuccessPage/*.{xib}']
   end
 
 end

@@ -10,6 +10,9 @@
 		F230C22828DD909A0056ADBE /* EDTSOTP.xib in Resources */ = {isa = PBXBuildFile; fileRef = F230C22728DD909A0056ADBE /* EDTSOTP.xib */; };
 		F230C22A28DD90AA0056ADBE /* EDTSOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230C22928DD90AA0056ADBE /* EDTSOTP.swift */; };
 		F230C22C28DD92620056ADBE /* EDTSOTPDigit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230C22B28DD92620056ADBE /* EDTSOTPDigit.swift */; };
+		F25CB5C82925F80D008D4306 /* EDTSSuccessPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25CB5C62925F80D008D4306 /* EDTSSuccessPage.swift */; };
+		F25CB5C92925F80D008D4306 /* EDTSSuccessPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = F25CB5C72925F80D008D4306 /* EDTSSuccessPage.xib */; };
+		F25CB5CB2925F9EF008D4306 /* EDTSSuccessPageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25CB5CA2925F9EF008D4306 /* EDTSSuccessPageStyle.swift */; };
 		F26010A528D02CAC0097FD95 /* EDTSUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F26010A428D02CAC0097FD95 /* EDTSUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F26010AF28D02EDF0097FD95 /* EDTSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26010AE28D02EDF0097FD95 /* EDTSColor.swift */; };
 		F26010B428D038F00097FD95 /* EDTSFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26010B328D038F00097FD95 /* EDTSFont.swift */; };
@@ -31,6 +34,9 @@
 		F230C22728DD909A0056ADBE /* EDTSOTP.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EDTSOTP.xib; sourceTree = "<group>"; };
 		F230C22928DD90AA0056ADBE /* EDTSOTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSOTP.swift; sourceTree = "<group>"; };
 		F230C22B28DD92620056ADBE /* EDTSOTPDigit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSOTPDigit.swift; sourceTree = "<group>"; };
+		F25CB5C62925F80D008D4306 /* EDTSSuccessPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSSuccessPage.swift; sourceTree = "<group>"; };
+		F25CB5C72925F80D008D4306 /* EDTSSuccessPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EDTSSuccessPage.xib; sourceTree = "<group>"; };
+		F25CB5CA2925F9EF008D4306 /* EDTSSuccessPageStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSSuccessPageStyle.swift; sourceTree = "<group>"; };
 		F26010A128D02CAC0097FD95 /* EDTSUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EDTSUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26010A428D02CAC0097FD95 /* EDTSUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDTSUI.h; sourceTree = "<group>"; };
 		F26010AE28D02EDF0097FD95 /* EDTSColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSColor.swift; sourceTree = "<group>"; };
@@ -68,6 +74,16 @@
 				F230C22728DD909A0056ADBE /* EDTSOTP.xib */,
 			);
 			path = OTP;
+			sourceTree = "<group>";
+		};
+		F25CB5C32925F7C9008D4306 /* SuccessPage */ = {
+			isa = PBXGroup;
+			children = (
+				F25CB5CA2925F9EF008D4306 /* EDTSSuccessPageStyle.swift */,
+				F25CB5C62925F80D008D4306 /* EDTSSuccessPage.swift */,
+				F25CB5C72925F80D008D4306 /* EDTSSuccessPage.xib */,
+			);
+			path = SuccessPage;
 			sourceTree = "<group>";
 		};
 		F260109728D02CAC0097FD95 = {
@@ -168,6 +184,7 @@
 			children = (
 				F26010B528D03B580097FD95 /* PopUp */,
 				F263E67128E2A57F0084A3D6 /* Onboarding */,
+				F25CB5C32925F7C9008D4306 /* SuccessPage */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -253,6 +270,7 @@
 			files = (
 				F26010BB28D03B580097FD95 /* EDTSPopUp.xib in Resources */,
 				F2E9DF8B28ED70A500EB301F /* EDTSStepper.xib in Resources */,
+				F25CB5C92925F80D008D4306 /* EDTSSuccessPage.xib in Resources */,
 				F297DC7028D96C500096D2FA /* EDTSTextField.xib in Resources */,
 				F263E67528E2A60E0084A3D6 /* EDTSOnboarding.xib in Resources */,
 				F230C22828DD909A0056ADBE /* EDTSOTP.xib in Resources */,
@@ -273,9 +291,11 @@
 				F263E67B28E2A9CE0084A3D6 /* EDTSOnboardingData.swift in Sources */,
 				F297DC7228D96C830096D2FA /* EDTSTextField.swift in Sources */,
 				F263E67328E2A5F60084A3D6 /* EDTSOnboarding.swift in Sources */,
+				F25CB5C82925F80D008D4306 /* EDTSSuccessPage.swift in Sources */,
 				F26010BC28D03B580097FD95 /* EDTSPopUp.swift in Sources */,
 				F26010C728D03ECB0097FD95 /* EDTSPopUpStyle.swift in Sources */,
 				F230C22C28DD92620056ADBE /* EDTSOTPDigit.swift in Sources */,
+				F25CB5CB2925F9EF008D4306 /* EDTSSuccessPageStyle.swift in Sources */,
 				F26010AF28D02EDF0097FD95 /* EDTSColor.swift in Sources */,
 				F230C22A28DD90AA0056ADBE /* EDTSOTP.swift in Sources */,
 			);

@@ -23,6 +23,8 @@ EDTSUI is an iOS SDK that help developer to design user interface based on EDTS 
 - [x] TextField
 - [x] PopUp
 - [x] Onboarding
+- [x] Stepper
+- [x] Success Page
 
 ## Installation
 
