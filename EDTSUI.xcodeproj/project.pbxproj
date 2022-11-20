@@ -24,6 +24,8 @@
 		F263E67728E2A8320084A3D6 /* EDTSOnboardingContent.xib in Resources */ = {isa = PBXBuildFile; fileRef = F263E67628E2A8320084A3D6 /* EDTSOnboardingContent.xib */; };
 		F263E67928E2A83C0084A3D6 /* EDTSOnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F263E67828E2A83C0084A3D6 /* EDTSOnboardingContent.swift */; };
 		F263E67B28E2A9CE0084A3D6 /* EDTSOnboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F263E67A28E2A9CE0084A3D6 /* EDTSOnboardingData.swift */; };
+		F288C570292A20930073AE5B /* EDTSToaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = F288C56E292A20930073AE5B /* EDTSToaster.swift */; };
+		F288C571292A20930073AE5B /* EDTSToaster.xib in Resources */ = {isa = PBXBuildFile; fileRef = F288C56F292A20930073AE5B /* EDTSToaster.xib */; };
 		F297DC7028D96C500096D2FA /* EDTSTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = F297DC6F28D96C500096D2FA /* EDTSTextField.xib */; };
 		F297DC7228D96C830096D2FA /* EDTSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297DC7128D96C830096D2FA /* EDTSTextField.swift */; };
 		F2E9DF8928ED709700EB301F /* EDTSStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E9DF8828ED709700EB301F /* EDTSStepper.swift */; };
@@ -49,6 +51,8 @@
 		F263E67628E2A8320084A3D6 /* EDTSOnboardingContent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EDTSOnboardingContent.xib; sourceTree = "<group>"; };
 		F263E67828E2A83C0084A3D6 /* EDTSOnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSOnboardingContent.swift; sourceTree = "<group>"; };
 		F263E67A28E2A9CE0084A3D6 /* EDTSOnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSOnboardingData.swift; sourceTree = "<group>"; };
+		F288C56E292A20930073AE5B /* EDTSToaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSToaster.swift; sourceTree = "<group>"; };
+		F288C56F292A20930073AE5B /* EDTSToaster.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTSToaster.xib; sourceTree = "<group>"; };
 		F297DC6F28D96C500096D2FA /* EDTSTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EDTSTextField.xib; sourceTree = "<group>"; };
 		F297DC7128D96C830096D2FA /* EDTSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSTextField.swift; sourceTree = "<group>"; };
 		F2E9DF8828ED709700EB301F /* EDTSStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSStepper.swift; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 				F230C22628DD8EEE0056ADBE /* OTP */,
 				F2F10B9228D44BBF00985AE8 /* Textfield */,
 				F2E9DF8728ED6FAD00EB301F /* Stepper */,
+				F288C56D292A206D0073AE5B /* Toaster */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -168,6 +173,15 @@
 				F263E67A28E2A9CE0084A3D6 /* EDTSOnboardingData.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		F288C56D292A206D0073AE5B /* Toaster */ = {
+			isa = PBXGroup;
+			children = (
+				F288C56E292A20930073AE5B /* EDTSToaster.swift */,
+				F288C56F292A20930073AE5B /* EDTSToaster.xib */,
+			);
+			path = Toaster;
 			sourceTree = "<group>";
 		};
 		F2E9DF8728ED6FAD00EB301F /* Stepper */ = {
@@ -270,6 +284,7 @@
 			files = (
 				F26010BB28D03B580097FD95 /* EDTSPopUp.xib in Resources */,
 				F2E9DF8B28ED70A500EB301F /* EDTSStepper.xib in Resources */,
+				F288C571292A20930073AE5B /* EDTSToaster.xib in Resources */,
 				F25CB5C92925F80D008D4306 /* EDTSSuccessPage.xib in Resources */,
 				F297DC7028D96C500096D2FA /* EDTSTextField.xib in Resources */,
 				F263E67528E2A60E0084A3D6 /* EDTSOnboarding.xib in Resources */,
@@ -291,6 +306,7 @@
 				F263E67B28E2A9CE0084A3D6 /* EDTSOnboardingData.swift in Sources */,
 				F297DC7228D96C830096D2FA /* EDTSTextField.swift in Sources */,
 				F263E67328E2A5F60084A3D6 /* EDTSOnboarding.swift in Sources */,
+				F288C570292A20930073AE5B /* EDTSToaster.swift in Sources */,
 				F25CB5C82925F80D008D4306 /* EDTSSuccessPage.swift in Sources */,
 				F26010BC28D03B580097FD95 /* EDTSPopUp.swift in Sources */,
 				F26010C728D03ECB0097FD95 /* EDTSPopUpStyle.swift in Sources */,
