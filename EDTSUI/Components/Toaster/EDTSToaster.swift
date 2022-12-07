@@ -53,7 +53,7 @@ public class EDTSToaster: UIView {
         let frameworkBundle = Bundle(for: EDTSToaster.self)
         frameworkBundle.loadNibNamed("EDTSToaster", owner: self, options: nil)
         addSubview(contentView)
-        contentView.frame = self.bounds
+        contentView.frame = self.frame
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     }
 }

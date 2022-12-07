@@ -25,6 +25,9 @@ public class EDTSSuccessPage: UIViewController {
     @IBOutlet weak var containerSecondButtonLeadingAnchor: NSLayoutConstraint!
     @IBOutlet weak var containerSecondButtonWidthAnchor: NSLayoutConstraint!
     
+    @IBOutlet weak var containerBottomInfo: UIView!
+    @IBOutlet weak var lblBottomInfo: UILabel!
+    
     public var style: EDTSSuccessPageStyle?
     public var delegate: EDTSSuccessPageDelegate?
     
@@ -100,6 +103,19 @@ public class EDTSSuccessPage: UIViewController {
         
         if style?.colorMessage != nil {
             lblSuccessPageMessage.textColor = style!.colorMessage!
+        }
+        
+        if style?.bottomInfo != nil {
+            containerBottomInfo.isHidden = false
+            containerBottomInfo.backgroundColor = style?.bottomInfo?.background ?? .clear
+            containerBottomInfo.layer.cornerRadius = style?.bottomInfo?.cornerRadius ?? 0
+            containerBottomInfo.layer.borderWidth = style?.bottomInfo?.borderWidth ?? 0
+            containerBottomInfo.layer.borderColor = style?.bottomInfo?.borderColor?.cgColor ?? UIColor.clear.cgColor
+            
+            lblBottomInfo.text = style?.bottomInfo?.message
+            lblBottomInfo.textAlignment = style?.bottomInfo?.alignment ?? .left
+            lblBottomInfo.font = style?.bottomInfo?.textFont ?? UIFont.systemFont(ofSize: 14)
+            lblBottomInfo.textColor = style?.bottomInfo?.textColor ?? .black
         }
     }
     

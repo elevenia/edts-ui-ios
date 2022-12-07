@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2504E6F4293705F600B1F7CF /* EDTSDropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2504E6F3293705F600B1F7CF /* EDTSDropdown.swift */; };
+		2504E6F62937060600B1F7CF /* EDTSDropdown.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2504E6F52937060600B1F7CF /* EDTSDropdown.xib */; };
+		2584CDCA293DAE0900A45A21 /* EDTSDropZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2584CDC9293DAE0900A45A21 /* EDTSDropZone.swift */; };
+		2584CDCC293DAE1000A45A21 /* EDTSDropZone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2584CDCB293DAE1000A45A21 /* EDTSDropZone.xib */; };
+		25943A262938536200BCEBA0 /* EDTSList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25943A252938536200BCEBA0 /* EDTSList.swift */; };
+		25943A282938536C00BCEBA0 /* EDTSList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25943A272938536C00BCEBA0 /* EDTSList.xib */; };
 		F230C22828DD909A0056ADBE /* EDTSOTP.xib in Resources */ = {isa = PBXBuildFile; fileRef = F230C22728DD909A0056ADBE /* EDTSOTP.xib */; };
 		F230C22A28DD90AA0056ADBE /* EDTSOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230C22928DD90AA0056ADBE /* EDTSOTP.swift */; };
 		F230C22C28DD92620056ADBE /* EDTSOTPDigit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230C22B28DD92620056ADBE /* EDTSOTPDigit.swift */; };
@@ -33,6 +39,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2504E6F3293705F600B1F7CF /* EDTSDropdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSDropdown.swift; sourceTree = "<group>"; };
+		2504E6F52937060600B1F7CF /* EDTSDropdown.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EDTSDropdown.xib; sourceTree = "<group>"; };
+		2584CDC9293DAE0900A45A21 /* EDTSDropZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSDropZone.swift; sourceTree = "<group>"; };
+		2584CDCB293DAE1000A45A21 /* EDTSDropZone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EDTSDropZone.xib; sourceTree = "<group>"; };
+		25943A252938536200BCEBA0 /* EDTSList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSList.swift; sourceTree = "<group>"; };
+		25943A272938536C00BCEBA0 /* EDTSList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EDTSList.xib; sourceTree = "<group>"; };
 		F230C22728DD909A0056ADBE /* EDTSOTP.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EDTSOTP.xib; sourceTree = "<group>"; };
 		F230C22928DD90AA0056ADBE /* EDTSOTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSOTP.swift; sourceTree = "<group>"; };
 		F230C22B28DD92620056ADBE /* EDTSOTPDigit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSOTPDigit.swift; sourceTree = "<group>"; };
@@ -70,6 +82,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2504E6F2293705D100B1F7CF /* Dropdown */ = {
+			isa = PBXGroup;
+			children = (
+				2504E6F3293705F600B1F7CF /* EDTSDropdown.swift */,
+				2504E6F52937060600B1F7CF /* EDTSDropdown.xib */,
+			);
+			path = Dropdown;
+			sourceTree = "<group>";
+		};
+		2584CDC8293DADF900A45A21 /* Dropzone */ = {
+			isa = PBXGroup;
+			children = (
+				2584CDC9293DAE0900A45A21 /* EDTSDropZone.swift */,
+				2584CDCB293DAE1000A45A21 /* EDTSDropZone.xib */,
+			);
+			path = Dropzone;
+			sourceTree = "<group>";
+		};
+		25943A242938534D00BCEBA0 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				25943A252938536200BCEBA0 /* EDTSList.swift */,
+				25943A272938536C00BCEBA0 /* EDTSList.xib */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
 		F230C22628DD8EEE0056ADBE /* OTP */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +168,9 @@
 		F26010AC28D02D100097FD95 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2584CDC8293DADF900A45A21 /* Dropzone */,
+				25943A242938534D00BCEBA0 /* List */,
+				2504E6F2293705D100B1F7CF /* Dropdown */,
 				F230C22628DD8EEE0056ADBE /* OTP */,
 				F2F10B9228D44BBF00985AE8 /* Textfield */,
 				F2E9DF8728ED6FAD00EB301F /* Stepper */,
@@ -283,12 +325,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F26010BB28D03B580097FD95 /* EDTSPopUp.xib in Resources */,
+				2584CDCC293DAE1000A45A21 /* EDTSDropZone.xib in Resources */,
 				F2E9DF8B28ED70A500EB301F /* EDTSStepper.xib in Resources */,
 				F288C571292A20930073AE5B /* EDTSToaster.xib in Resources */,
 				F25CB5C92925F80D008D4306 /* EDTSSuccessPage.xib in Resources */,
 				F297DC7028D96C500096D2FA /* EDTSTextField.xib in Resources */,
 				F263E67528E2A60E0084A3D6 /* EDTSOnboarding.xib in Resources */,
 				F230C22828DD909A0056ADBE /* EDTSOTP.xib in Resources */,
+				25943A282938536C00BCEBA0 /* EDTSList.xib in Resources */,
+				2504E6F62937060600B1F7CF /* EDTSDropdown.xib in Resources */,
 				F263E67728E2A8320084A3D6 /* EDTSOnboardingContent.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,11 +350,14 @@
 				F2E9DF8928ED709700EB301F /* EDTSStepper.swift in Sources */,
 				F263E67B28E2A9CE0084A3D6 /* EDTSOnboardingData.swift in Sources */,
 				F297DC7228D96C830096D2FA /* EDTSTextField.swift in Sources */,
+				25943A262938536200BCEBA0 /* EDTSList.swift in Sources */,
 				F263E67328E2A5F60084A3D6 /* EDTSOnboarding.swift in Sources */,
 				F288C570292A20930073AE5B /* EDTSToaster.swift in Sources */,
 				F25CB5C82925F80D008D4306 /* EDTSSuccessPage.swift in Sources */,
+				2584CDCA293DAE0900A45A21 /* EDTSDropZone.swift in Sources */,
 				F26010BC28D03B580097FD95 /* EDTSPopUp.swift in Sources */,
 				F26010C728D03ECB0097FD95 /* EDTSPopUpStyle.swift in Sources */,
+				2504E6F4293705F600B1F7CF /* EDTSDropdown.swift in Sources */,
 				F230C22C28DD92620056ADBE /* EDTSOTPDigit.swift in Sources */,
 				F25CB5CB2925F9EF008D4306 /* EDTSSuccessPageStyle.swift in Sources */,
 				F26010AF28D02EDF0097FD95 /* EDTSColor.swift in Sources */,

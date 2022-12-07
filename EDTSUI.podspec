@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "EDTSUI"
-  spec.version      = "0.0.9"
+  spec.version      = "0.1.0"
   spec.summary      = "EDTSUI is an iOS SDK for design user interface"
   spec.description  = "EDTSUI is an iOS SDK that help developer to design user interface based on EDTS Design System."
 
@@ -61,6 +61,21 @@ Pod::Spec.new do |spec|
   spec.subspec 'Toaster' do |ss|
     ss.source_files = 'EDTSUI/Components/Toaster'
     ss.resources = ['EDTSUI/Components/Toaster/*.{xib}']
+  end
+
+  spec.subspec 'Dropzone' do |ss|
+    ss.source_files = 'EDTSUI/Components/Dropzone'
+    ss.resources = ['EDTSUI/Components/Dropzone/*.{xib}']
+  end
+
+  spec.subspec 'List' do |ss|
+    ss.source_files = 'EDTSUI/Components/List'
+    ss.resources = ['EDTSUI/Components/List/*.{xib}']
+  end
+
+  spec.subspec 'Dropdown' do |ss|
+    ss.source_files = 'EDTSUI/Components/Dropdown'
+    ss.resources = ['EDTSUI/Components/Dropdown/*.{xib}']
   end
 
 end
