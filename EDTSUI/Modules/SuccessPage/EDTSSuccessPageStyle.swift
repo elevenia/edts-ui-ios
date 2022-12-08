@@ -44,16 +44,18 @@ public struct EDTSSuccessPageBottomInfo {
     var textFont: UIFont?
     var textColor: UIColor?
     var alignment: NSTextAlignment?
+    var attributes: NSAttributedString?
     var background: UIColor?
     var cornerRadius: CGFloat?
     var borderWidth: CGFloat?
     var borderColor: UIColor?
     
-    public init(message: String?, textFont: UIFont?, textColor: UIColor?, alignment: NSTextAlignment?, background: UIColor?, cornerRadius: CGFloat?, borderWidth: CGFloat?, borderColor: UIColor?) {
+    public init(message: String?, textFont: UIFont?, textColor: UIColor?, alignment: NSTextAlignment?, attributes: NSAttributedString?, background: UIColor?, cornerRadius: CGFloat?, borderWidth: CGFloat?, borderColor: UIColor?) {
         self.message = message
         self.textFont = textFont
         self.textColor = textColor
         self.alignment = alignment
+        self.attributes = attributes
         self.background = background
         self.cornerRadius = cornerRadius
         self.borderWidth = borderWidth

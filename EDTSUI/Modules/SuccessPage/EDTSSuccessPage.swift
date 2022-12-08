@@ -116,6 +116,10 @@ public class EDTSSuccessPage: UIViewController {
             lblBottomInfo.textAlignment = style?.bottomInfo?.alignment ?? .left
             lblBottomInfo.font = style?.bottomInfo?.textFont ?? UIFont.systemFont(ofSize: 14)
             lblBottomInfo.textColor = style?.bottomInfo?.textColor ?? .black
+            
+            if style?.bottomInfo?.attributes != nil {
+                lblBottomInfo.attributedText = style!.bottomInfo!.attributes!
+            }
         }
     }
     

@@ -11,7 +11,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EDTSStepper" customModule="EDTSUI" customModuleProvider="target">
             <connections>
                 <outlet property="btnAdd" destination="cI3-ya-Cdm" id="2OH-xR-7bj"/>
+                <outlet property="btnAddHeightAnchor" destination="fSk-oc-gkL" id="nvF-e2-NYR"/>
+                <outlet property="btnAddWidthAnchor" destination="692-2P-gyL" id="rmh-v2-W1J"/>
                 <outlet property="btnSubtract" destination="6Cf-bo-Lfp" id="YIB-Ad-rYe"/>
+                <outlet property="btnSubtractHeightAnchor" destination="GK9-qY-QTe" id="N8J-2b-jqK"/>
+                <outlet property="btnSubtractWidthAnchor" destination="CVC-fr-Y5M" id="7cd-N8-XOA"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="ykz-T1-Ztl"/>
                 <outlet property="textfield" destination="BVT-ju-S28" id="QDS-zr-9k2"/>
                 <outlet property="underline" destination="vDv-Fh-DF3" id="3YH-i7-WHy"/>

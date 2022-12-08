@@ -10,8 +10,15 @@ import UIKit
 @IBDesignable public class EDTSStepper: UIView {
 
     @IBOutlet var contentView: UIView!
+    
     @IBOutlet weak public var btnSubtract: UIButton!
+    @IBOutlet weak public var btnSubtractWidthAnchor: NSLayoutConstraint!
+    @IBOutlet weak public var btnSubtractHeightAnchor: NSLayoutConstraint!
+    
     @IBOutlet weak public var btnAdd: UIButton!
+    @IBOutlet weak public var btnAddWidthAnchor: NSLayoutConstraint!
+    @IBOutlet weak public var btnAddHeightAnchor: NSLayoutConstraint!
+    
     @IBOutlet weak public var textfield: UITextField!
     @IBOutlet weak public var underline: UIImageView!
     
