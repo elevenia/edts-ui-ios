@@ -44,6 +44,7 @@ import UIKit
         }
         set {
             self.dropdownPlaceholder.text = newValue
+            self.placeholderLabel = newValue
         }
     }
     
@@ -226,6 +227,7 @@ import UIKit
     var dropdownCornerRadius = 4
     var dropdownBorderWidth = 1
     
+    var placeholderLabel = ""
     var placeholderName = "--"
     var placeholderSize = 14
     var placeholderColor = UIColor(red: 156.0/255.0, green: 157.0/255.0, blue: 166.0/255.0, alpha: 1.0)
@@ -298,12 +300,20 @@ import UIKit
         }
     }
     
+    public func setText(text: String) {
+        setDefault()
+        dropdownPlaceholder.text = text
+        dropdownPlaceholder.textColor = placeholderFilledColor
+    }
+    
     public func setDefault() {
         containerDropdown.layer.borderColor = colorBorder.cgColor
         containerDropdown.backgroundColor = colorBg
         helpText.textColor = helpTextColor
         dropdownIcon.layer.opacity = 1
         dropdownButton.isEnabled = true
+        dropdownPlaceholder.text = placeholderLabel
+        dropdownPlaceholder.textColor = placeholderColor
     }
     
     public func setError() {
