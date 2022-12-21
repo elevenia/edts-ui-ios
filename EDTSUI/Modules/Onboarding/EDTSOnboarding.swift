@@ -19,6 +19,7 @@ public protocol EDTSOnboardingDelegate {
     private var pageControl = UIPageControl()
     private var datas = [EDTSOnboardingData]()
     private var contentPositions = [CGFloat]()
+    private var isResetDecelerating = false
     
     public var delegate: EDTSOnboardingDelegate?
     
@@ -157,9 +158,25 @@ public protocol EDTSOnboardingDelegate {
 
 extension EDTSOnboarding: UIScrollViewDelegate {
     public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        if isResetDecelerating {
+            isResetDecelerating = false
+        } else {
+            let pageWidth = scrollView.frame.width
+            let currentPage = floor((scrollView.contentOffset.x-pageWidth/2)/pageWidth)+1
+            pageControl.currentPage = Int(currentPage)
+            self.delegate?.onOnboardingScrolled(index: Int(currentPage))
+        }
+    }
+    
+    public func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
         let pageWidth = scrollView.frame.width
         let currentPage = floor((scrollView.contentOffset.x-pageWidth/2)/pageWidth)+1
-        pageControl.currentPage = Int(currentPage)
-        self.delegate?.onOnboardingScrolled(index: Int(currentPage))
+        
+        if scrollView.contentOffset.x > pageWidth && Int(currentPage) == (datas.count-1)  {
+            pageControl.currentPage = 0
+            isResetDecelerating = true
+            scrollView.setContentOffset(CGPoint(x: 0, y: scrollView.frame.minY), animated: true)
+            self.delegate?.onOnboardingScrolled(index: Int(pageControl.currentPage))
+        }
     }
 }
