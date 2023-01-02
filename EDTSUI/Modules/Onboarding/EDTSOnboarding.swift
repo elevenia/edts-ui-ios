@@ -9,6 +9,7 @@ import UIKit
 
 public protocol EDTSOnboardingDelegate {
     func onOnboardingScrolled(index: Int)
+    func onOnboardingBeginScrolling()
 }
 
 @IBDesignable public class EDTSOnboarding: UIView {
@@ -157,6 +158,10 @@ public protocol EDTSOnboardingDelegate {
 }
 
 extension EDTSOnboarding: UIScrollViewDelegate {
+    public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        self.delegate?.onOnboardingBeginScrolling()
+    }
+    
     public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         if isResetDecelerating {
             isResetDecelerating = false
