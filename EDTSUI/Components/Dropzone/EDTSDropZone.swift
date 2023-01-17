@@ -16,6 +16,7 @@ import UIKit
     @IBOutlet weak public var dropzoneButton: UIButton!
     @IBOutlet weak public var containerLabel: UIView!
     @IBOutlet weak public var dropzoneLabel: UILabel!
+    @IBOutlet weak public var dropzoneVideoIcon: UIImageView!
     
     @IBInspectable var label: String {
         get {
@@ -33,6 +34,16 @@ import UIKit
         set {
             self.dropzoneImageDefault.image = newValue
             self.photoDefault = newValue
+        }
+    }
+    
+    @IBInspectable var defaultVideoIcon: UIImage {
+        get {
+            return self.videoIcon
+        }
+        set {
+            self.dropzoneVideoIcon.image = newValue
+            self.videoIcon = newValue
         }
     }
     
@@ -128,6 +139,7 @@ import UIKit
     
     var photoDefault = UIImage()
     var photoError = UIImage()
+    var videoIcon = UIImage()
     
     var containerLabelColor = UIColor(red: 92.0/255.0, green: 148.0/255.0, blue: 15.0/255.0, alpha: 1.0)
     
@@ -159,6 +171,8 @@ import UIKit
         
         dropzoneLabel.textColor = labelColor
         dropzoneLabel.font = UIFont(name: labelName, size: CGFloat(labelSize)) ?? UIFont.systemFont(ofSize: CGFloat(labelSize))
+        
+        dropzoneVideoIcon.isHidden = true
     }
     
     private func setupContent() {
@@ -166,6 +180,7 @@ import UIKit
             containerLabel.isHidden = true
             dropzoneLabel.isHidden = true
             dropzoneImagePhoto.isHidden = true
+            dropzoneVideoIcon.isHidden = true
             dropzoneImageDefault.isHidden = false
         } else {
             dropzoneImagePhoto.isHidden = false
@@ -197,7 +212,14 @@ import UIKit
     
     public func setPhoto(image: UIImage) {
         isDefault = false
+        dropzoneVideoIcon.isHidden = true
         dropzoneImagePhoto.image = image
+        setupContent()
+    }
+    
+    public func setVideo() {
+        isDefault = false
+        dropzoneVideoIcon.isHidden = false
         setupContent()
     }
 }

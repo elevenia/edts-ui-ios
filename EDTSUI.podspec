@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "EDTSUI"
-  spec.version      = "0.1.4"
+  spec.version      = "0.1.5"
   spec.summary      = "EDTSUI is an iOS SDK for design user interface"
   spec.description  = "EDTSUI is an iOS SDK that help developer to design user interface based on EDTS Design System."
 
