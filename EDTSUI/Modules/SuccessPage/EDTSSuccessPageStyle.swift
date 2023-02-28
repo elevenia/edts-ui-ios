@@ -49,8 +49,10 @@ public struct EDTSSuccessPageBottomInfo {
     var cornerRadius: CGFloat?
     var borderWidth: CGFloat?
     var borderColor: UIColor?
+    var image: UIImage?
+    var imageSize: CGFloat?
     
-    public init(message: String?, textFont: UIFont?, textColor: UIColor?, alignment: NSTextAlignment?, attributes: NSAttributedString?, background: UIColor?, cornerRadius: CGFloat?, borderWidth: CGFloat?, borderColor: UIColor?) {
+    public init(message: String?, textFont: UIFont?, textColor: UIColor?, alignment: NSTextAlignment?, attributes: NSAttributedString?, background: UIColor?, cornerRadius: CGFloat?, borderWidth: CGFloat?, borderColor: UIColor?, image: UIImage?, imageSize: CGFloat?) {
         self.message = message
         self.textFont = textFont
         self.textColor = textColor
@@ -60,5 +62,7 @@ public struct EDTSSuccessPageBottomInfo {
         self.cornerRadius = cornerRadius
         self.borderWidth = borderWidth
         self.borderColor = borderColor
+        self.image = image
+        self.imageSize = imageSize
     }
 }

@@ -27,6 +27,9 @@ public class EDTSSuccessPage: UIViewController {
     
     @IBOutlet weak var containerBottomInfo: UIView!
     @IBOutlet weak var lblBottomInfo: UILabel!
+    @IBOutlet weak var lblBottomInfoLeadingAnchor: NSLayoutConstraint!
+    @IBOutlet weak var imgBottomInfo: UIImageView!
+    @IBOutlet weak var imgBottomInfoHeightAnchor: NSLayoutConstraint!
     
     public var style: EDTSSuccessPageStyle?
     public var delegate: EDTSSuccessPageDelegate?
@@ -119,6 +122,17 @@ public class EDTSSuccessPage: UIViewController {
             
             if style?.bottomInfo?.attributes != nil {
                 lblBottomInfo.attributedText = style!.bottomInfo!.attributes!
+            }
+            
+            if style?.bottomInfo?.image != nil {
+                imgBottomInfo.isHidden = false
+                imgBottomInfo.image = style?.bottomInfo?.image
+                imgBottomInfoHeightAnchor.constant = style?.bottomInfo?.imageSize ?? 16
+                lblBottomInfoLeadingAnchor.constant = 8
+            } else {
+                imgBottomInfo.isHidden = true
+                imgBottomInfoHeightAnchor.constant = 0
+                lblBottomInfoLeadingAnchor.constant = 0
             }
         }
     }
