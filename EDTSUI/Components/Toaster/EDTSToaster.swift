@@ -44,6 +44,32 @@ public class EDTSToaster: UIView {
         }
     }
     
+    public init(frame: CGRect, attributedText: NSAttributedString?, icon: UIImage?, font: UIFont?, background: UIColor?) {
+        super.init(frame: frame)
+        setupNib()
+        
+        if icon != nil {
+            self.icon.image = icon
+            self.icon.isHidden = false
+            self.iconWidthAnchor.constant = 16
+            self.iconTrailingAnchor.constant = 8
+        } else {
+            self.icon.isHidden = true
+            self.iconWidthAnchor.constant = 0
+            self.iconTrailingAnchor.constant = 0
+        }
+
+        if font != nil {
+            self.label.font = font
+        }
+        
+        if background != nil {
+            self.container.backgroundColor = background
+        }
+        
+        self.label.attributedText = attributedText
+    }
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupNib()
