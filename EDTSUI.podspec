@@ -1,14 +1,14 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "EDTSUI"
-  spec.version      = "0.1.7"
+  spec.version      = "0.1.8"
   spec.summary      = "EDTSUI is an iOS SDK for design user interface"
   spec.description  = "EDTSUI is an iOS SDK that help developer to design user interface based on EDTS Design System."
 
   spec.homepage     = "https://github.com/elevenia/edts-ui-ios"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
 
-  spec.author             = { "Victor Agung Sukarno" => "victor.sukarno@sg-edts.com" }
+  spec.author             = { "Victor Agung Sukarno" => "victor.sukarno@sg-edts.com", "Alfin Syahruddin" => "muhammad.alfin@sg-edts.com" }
 
   spec.platform     = :ios
   spec.platform     = :ios, "11.0"
@@ -77,5 +77,67 @@ Pod::Spec.new do |spec|
     ss.source_files = 'EDTSUI/Components/Dropdown'
     ss.resources = ['EDTSUI/Components/Dropdown/*.{xib}']
   end
+
+  spec.subspec 'BaseTray' do |ss|
+    ss.source_files = 'EDTSUI/Components/BaseTray'
+    ss.resources = ['EDTSUI/Components/BaseTray/*.{xib}']
+  end
+
+  spec.subspec 'DatePicker' do |ss|
+    ss.source_files = 'EDTSUI/Components/DatePicker'
+    ss.resources = ['EDTSUI/Components/DatePicker/*.{xib}']
+  end
+
+  spec.subspec 'FittedTableView' do |ss|
+    ss.source_files = 'EDTSUI/Components/FittedTableView'
+    ss.resources = ['EDTSUI/Components/FittedTableView/*.{xib}']
+  end
+
+  spec.subspec 'FittedCollectionView' do |ss|
+    ss.source_files = 'EDTSUI/Components/FittedCollectionView'
+    ss.resources = ['EDTSUI/Components/FittedCollectionView/*.{xib}']
+  end
+
+  spec.subspec 'RangeSlider' do |ss|
+    ss.source_files = 'EDTSUI/Components/RangeSlider'
+    ss.resources = ['EDTSUI/Components/RangeSlider/*.{xib}']
+  end
+
+  spec.subspec 'EDTSUIView' do |ss|
+    ss.source_files = 'EDTSUI/Components/EDTSUIView'
+    ss.resources = ['EDTSUI/Components/EDTSUIView/*.{xib}']
+  end
+
+  spec.subspec 'QRCodeView' do |ss|
+    ss.source_files = 'EDTSUI/Components/QRCodeView'
+    ss.resources = ['EDTSUI/Components/QRCodeView/*.{xib}']
+  end
+
+  spec.subspec 'MenuTray' do |ss|
+    ss.source_files = 'EDTSUI/Components/MenuTray'
+    ss.resources = ['EDTSUI/Components/MenuTray/*.{xib}']
+  end
+
+  spec.subspec 'AlertTray' do |ss|
+    ss.source_files = 'EDTSUI/Components/AlertTray'
+    ss.resources = ['EDTSUI/Components/AlertTray/*.{xib}']
+  end
+
+  spec.subspec 'InformationView' do |ss|
+    ss.source_files = 'EDTSUI/Components/InformationView'
+    ss.resources = ['EDTSUI/Components/InformationView/*.{xib}']
+  end
+
+  spec.subspec 'CheckboxOptions' do |ss|
+    ss.source_files = 'EDTSUI/Components/CheckboxOptions'
+    ss.resources = ['EDTSUI/Components/CheckboxOptions/*.{xib}']
+  end
+
+  spec.subspec 'RadioOptions' do |ss|
+    ss.source_files = 'EDTSUI/Components/RadioOptions'
+    ss.resources = ['EDTSUI/Components/RadioOptions/*.{xib}']
+  end
+
+
 
 end

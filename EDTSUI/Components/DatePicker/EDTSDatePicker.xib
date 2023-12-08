@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22155"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatePicker">
+            <connections>
+                <outlet property="edtsTextField" destination="W4N-Jd-Ogb" id="Xd5-Th-KpD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="89"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4N-Jd-Ogb" userLabel="Date" customClass="EDTSTextField" customModule="EDTSUI">
+                    <rect key="frame" x="0.0" y="0.0" width="359" height="89"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="label" value="Tanggal"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Pilih Tanggal"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="black30"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="showLabel" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="showIcon" value="NO"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelFontName" value="Inter-Semibold"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="labelFontSize">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="labelFontColor">
+                            <color key="value" name="black50"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="textfieldFontName" value="Inter-Regular"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="textfieldFontSize">
+                            <integer key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textfieldFontColor">
+                            <color key="value" name="black70"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="showButton" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="showHelpText" value="NO"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="stateError">
+                            <color key="value" name="SupportError"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="stateErrorBg">
+                            <color key="value" name="AlertError"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="stateFocused">
+                            <color key="value" name="Primary30"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="stateDisableBg">
+                            <color key="value" name="black30"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="stateDisable">
+                            <color key="value" name="black30"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="button" value="ic_date_gray"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="W4N-Jd-Ogb" secondAttribute="trailing" id="IoO-YQ-4yI"/>
+                <constraint firstItem="W4N-Jd-Ogb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="K8n-F4-YHR"/>
+                <constraint firstAttribute="bottom" secondItem="W4N-Jd-Ogb" secondAttribute="bottom" id="PsL-GC-Dab"/>
+                <constraint firstItem="W4N-Jd-Ogb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="n7m-bt-waO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-28.244274809160306" y="-248.94366197183101"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_date_gray" width="32" height="32"/>
+        <namedColor name="AlertError">
+            <color red="1" green="0.92941176470588238" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary30">
+            <color red="0.066666666666666666" green="0.47058823529411764" blue="0.83137254901960789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SupportError">
+            <color red="0.93333333333333335" green="0.16862745098039217" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="black30">
+            <color red="0.86274509803921573" green="0.87058823529411766" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="black50">
+            <color red="0.4392156862745098" green="0.44705882352941179" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="black70">
+            <color red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

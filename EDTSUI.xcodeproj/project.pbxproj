@@ -13,6 +13,49 @@
 		2584CDCC293DAE1000A45A21 /* EDTSDropZone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2584CDCB293DAE1000A45A21 /* EDTSDropZone.xib */; };
 		25943A262938536200BCEBA0 /* EDTSList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25943A252938536200BCEBA0 /* EDTSList.swift */; };
 		25943A282938536C00BCEBA0 /* EDTSList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25943A272938536C00BCEBA0 /* EDTSList.xib */; };
+		8E5FE3F92B22AF2A0003C66D /* EDTSUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5FE3F82B22AF2A0003C66D /* EDTSUIView.swift */; };
+		8E5FE43C2B22B1D20003C66D /* EDTSQRCodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E5FE4342B22B1D20003C66D /* EDTSQRCodeView.xib */; };
+		8E5FE43F2B22B1D20003C66D /* EDTSQRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5FE4382B22B1D20003C66D /* EDTSQRCodeView.swift */; };
+		8E5FE4402B22B1D20003C66D /* EDTSQRCodeViewTray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5FE43A2B22B1D20003C66D /* EDTSQRCodeViewTray.swift */; };
+		8E5FE4412B22B1D20003C66D /* EDTSQRCodeViewTray.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E5FE43B2B22B1D20003C66D /* EDTSQRCodeViewTray.xib */; };
+		8E5FE4442B22B21E0003C66D /* EDTSQRCodeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5FE4432B22B21E0003C66D /* EDTSQRCodeHelper.swift */; };
+		8E5FE4522B22B9DC0003C66D /* EDTSMenuTray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5FE44D2B22B9DC0003C66D /* EDTSMenuTray.swift */; };
+		8E5FE4532B22B9DC0003C66D /* EDTSMenuTray.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E5FE44E2B22B9DC0003C66D /* EDTSMenuTray.xib */; };
+		8E5FE4542B22B9DD0003C66D /* EDTSMenuTrayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5FE4502B22B9DC0003C66D /* EDTSMenuTrayCell.swift */; };
+		8E5FE4552B22B9DD0003C66D /* EDTSMenuTrayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E5FE4512B22B9DC0003C66D /* EDTSMenuTrayCell.xib */; };
+		8E5FE45E2B22C35D0003C66D /* EDTSAlertTray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5FE45C2B22C35D0003C66D /* EDTSAlertTray.swift */; };
+		8E5FE45F2B22C35D0003C66D /* EDTSAlertTray.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E5FE45D2B22C35D0003C66D /* EDTSAlertTray.xib */; };
+		8E5FE46B2B22C64A0003C66D /* EDTSInformationViewTray.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E5FE4672B22C64A0003C66D /* EDTSInformationViewTray.xib */; };
+		8E5FE46C2B22C64A0003C66D /* EDTSInformationViewTray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5FE4682B22C64A0003C66D /* EDTSInformationViewTray.swift */; };
+		8E5FE46D2B22C64A0003C66D /* EDTSInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E5FE4692B22C64A0003C66D /* EDTSInformationView.xib */; };
+		8E5FE46E2B22C64A0003C66D /* EDTSInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5FE46A2B22C64A0003C66D /* EDTSInformationView.swift */; };
+		8E5FE4702B22C68E0003C66D /* Extension+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5FE46F2B22C68E0003C66D /* Extension+UILabel.swift */; };
+		8E5FE4722B22C6B70003C66D /* Extension+NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5FE4712B22C6B70003C66D /* Extension+NSAttributedString.swift */; };
+		8E5FE4742B22C7590003C66D /* EDTSTextHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5FE4732B22C7590003C66D /* EDTSTextHelper.swift */; };
+		8E5FE4762B22C8230003C66D /* Extension+UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5FE4752B22C8230003C66D /* Extension+UITextView.swift */; };
+		8E5FE4882B22CD2E0003C66D /* EDTSCheckboxOptions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E5FE47D2B22CD2E0003C66D /* EDTSCheckboxOptions.xib */; };
+		8E5FE4892B22CD2E0003C66D /* EDTSCheckboxOptionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E5FE47F2B22CD2E0003C66D /* EDTSCheckboxOptionsCell.xib */; };
+		8E5FE48A2B22CD2E0003C66D /* EDTSCheckboxOptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5FE4802B22CD2E0003C66D /* EDTSCheckboxOptionsCell.swift */; };
+		8E5FE48B2B22CD2E0003C66D /* EDTSCheckboxOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5FE4812B22CD2E0003C66D /* EDTSCheckboxOptions.swift */; };
+		8E5FE48C2B22CD2E0003C66D /* EDTSRadioOptions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E5FE4832B22CD2E0003C66D /* EDTSRadioOptions.xib */; };
+		8E5FE48D2B22CD2E0003C66D /* EDTSRadioOptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5FE4852B22CD2E0003C66D /* EDTSRadioOptionsCell.swift */; };
+		8E5FE48E2B22CD2E0003C66D /* EDTSRadioOptionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E5FE4862B22CD2E0003C66D /* EDTSRadioOptionsCell.xib */; };
+		8E5FE48F2B22CD2E0003C66D /* EDTSRadioOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5FE4872B22CD2E0003C66D /* EDTSRadioOptions.swift */; };
+		8E5FE4922B22CE5F0003C66D /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5FE4912B22CE5F0003C66D /* Option.swift */; };
+		8E80C42C2B21CA7500AD2BC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E80C42B2B21CA7500AD2BC6 /* Assets.xcassets */; };
+		8E80C4312B21CD5400AD2BC6 /* EDTSFittedCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C42E2B21CD5400AD2BC6 /* EDTSFittedCollectionView.swift */; };
+		8E80C4322B21CD5400AD2BC6 /* EDTSFittedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C4302B21CD5400AD2BC6 /* EDTSFittedTableView.swift */; };
+		8E80C4472B21D43A00AD2BC6 /* EDTSRangeSliderTrackLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C4442B21D43A00AD2BC6 /* EDTSRangeSliderTrackLayer.swift */; };
+		8E80C4482B21D43A00AD2BC6 /* EDTSRangeSliderThumbLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C4452B21D43A00AD2BC6 /* EDTSRangeSliderThumbLayer.swift */; };
+		8E80C4492B21D43A00AD2BC6 /* EDTSRangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C4462B21D43A00AD2BC6 /* EDTSRangeSlider.swift */; };
+		8EF498622B21B51700F6BB4B /* EDTSDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF498592B21B51700F6BB4B /* EDTSDatePicker.swift */; };
+		8EF498632B21B51700F6BB4B /* EDTSDatePickerTray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF4985C2B21B51700F6BB4B /* EDTSDatePickerTray.swift */; };
+		8EF498642B21B51700F6BB4B /* EDTSDatePickerTray.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EF4985D2B21B51700F6BB4B /* EDTSDatePickerTray.xib */; };
+		8EF498652B21B51700F6BB4B /* EDTSMonthYearPickerTray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF4985F2B21B51700F6BB4B /* EDTSMonthYearPickerTray.swift */; };
+		8EF498662B21B51700F6BB4B /* EDTSMonthYearPickerTray.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EF498602B21B51700F6BB4B /* EDTSMonthYearPickerTray.xib */; };
+		8EF498672B21B51700F6BB4B /* EDTSDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EF498612B21B51700F6BB4B /* EDTSDatePicker.xib */; };
+		8EF4986A2B21B55F00F6BB4B /* EDTSBaseTray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF498692B21B55F00F6BB4B /* EDTSBaseTray.swift */; };
+		8EF4986D2B21B61100F6BB4B /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF4986C2B21B61100F6BB4B /* Extension+Date.swift */; };
 		F230C22828DD909A0056ADBE /* EDTSOTP.xib in Resources */ = {isa = PBXBuildFile; fileRef = F230C22728DD909A0056ADBE /* EDTSOTP.xib */; };
 		F230C22A28DD90AA0056ADBE /* EDTSOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230C22928DD90AA0056ADBE /* EDTSOTP.swift */; };
 		F230C22C28DD92620056ADBE /* EDTSOTPDigit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230C22B28DD92620056ADBE /* EDTSOTPDigit.swift */; };
@@ -45,6 +88,49 @@
 		2584CDCB293DAE1000A45A21 /* EDTSDropZone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EDTSDropZone.xib; sourceTree = "<group>"; };
 		25943A252938536200BCEBA0 /* EDTSList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSList.swift; sourceTree = "<group>"; };
 		25943A272938536C00BCEBA0 /* EDTSList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EDTSList.xib; sourceTree = "<group>"; };
+		8E5FE3F82B22AF2A0003C66D /* EDTSUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSUIView.swift; sourceTree = "<group>"; };
+		8E5FE4342B22B1D20003C66D /* EDTSQRCodeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTSQRCodeView.xib; sourceTree = "<group>"; };
+		8E5FE4382B22B1D20003C66D /* EDTSQRCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSQRCodeView.swift; sourceTree = "<group>"; };
+		8E5FE43A2B22B1D20003C66D /* EDTSQRCodeViewTray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSQRCodeViewTray.swift; sourceTree = "<group>"; };
+		8E5FE43B2B22B1D20003C66D /* EDTSQRCodeViewTray.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTSQRCodeViewTray.xib; sourceTree = "<group>"; };
+		8E5FE4432B22B21E0003C66D /* EDTSQRCodeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSQRCodeHelper.swift; sourceTree = "<group>"; };
+		8E5FE44D2B22B9DC0003C66D /* EDTSMenuTray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSMenuTray.swift; sourceTree = "<group>"; };
+		8E5FE44E2B22B9DC0003C66D /* EDTSMenuTray.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTSMenuTray.xib; sourceTree = "<group>"; };
+		8E5FE4502B22B9DC0003C66D /* EDTSMenuTrayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSMenuTrayCell.swift; sourceTree = "<group>"; };
+		8E5FE4512B22B9DC0003C66D /* EDTSMenuTrayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTSMenuTrayCell.xib; sourceTree = "<group>"; };
+		8E5FE45C2B22C35D0003C66D /* EDTSAlertTray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSAlertTray.swift; sourceTree = "<group>"; };
+		8E5FE45D2B22C35D0003C66D /* EDTSAlertTray.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTSAlertTray.xib; sourceTree = "<group>"; };
+		8E5FE4672B22C64A0003C66D /* EDTSInformationViewTray.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTSInformationViewTray.xib; sourceTree = "<group>"; };
+		8E5FE4682B22C64A0003C66D /* EDTSInformationViewTray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSInformationViewTray.swift; sourceTree = "<group>"; };
+		8E5FE4692B22C64A0003C66D /* EDTSInformationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTSInformationView.xib; sourceTree = "<group>"; };
+		8E5FE46A2B22C64A0003C66D /* EDTSInformationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSInformationView.swift; sourceTree = "<group>"; };
+		8E5FE46F2B22C68E0003C66D /* Extension+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UILabel.swift"; sourceTree = "<group>"; };
+		8E5FE4712B22C6B70003C66D /* Extension+NSAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSAttributedString.swift"; sourceTree = "<group>"; };
+		8E5FE4732B22C7590003C66D /* EDTSTextHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSTextHelper.swift; sourceTree = "<group>"; };
+		8E5FE4752B22C8230003C66D /* Extension+UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITextView.swift"; sourceTree = "<group>"; };
+		8E5FE47D2B22CD2E0003C66D /* EDTSCheckboxOptions.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTSCheckboxOptions.xib; sourceTree = "<group>"; };
+		8E5FE47F2B22CD2E0003C66D /* EDTSCheckboxOptionsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTSCheckboxOptionsCell.xib; sourceTree = "<group>"; };
+		8E5FE4802B22CD2E0003C66D /* EDTSCheckboxOptionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSCheckboxOptionsCell.swift; sourceTree = "<group>"; };
+		8E5FE4812B22CD2E0003C66D /* EDTSCheckboxOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSCheckboxOptions.swift; sourceTree = "<group>"; };
+		8E5FE4832B22CD2E0003C66D /* EDTSRadioOptions.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTSRadioOptions.xib; sourceTree = "<group>"; };
+		8E5FE4852B22CD2E0003C66D /* EDTSRadioOptionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSRadioOptionsCell.swift; sourceTree = "<group>"; };
+		8E5FE4862B22CD2E0003C66D /* EDTSRadioOptionsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTSRadioOptionsCell.xib; sourceTree = "<group>"; };
+		8E5FE4872B22CD2E0003C66D /* EDTSRadioOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSRadioOptions.swift; sourceTree = "<group>"; };
+		8E5FE4912B22CE5F0003C66D /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		8E80C42B2B21CA7500AD2BC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E80C42E2B21CD5400AD2BC6 /* EDTSFittedCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSFittedCollectionView.swift; sourceTree = "<group>"; };
+		8E80C4302B21CD5400AD2BC6 /* EDTSFittedTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSFittedTableView.swift; sourceTree = "<group>"; };
+		8E80C4442B21D43A00AD2BC6 /* EDTSRangeSliderTrackLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSRangeSliderTrackLayer.swift; sourceTree = "<group>"; };
+		8E80C4452B21D43A00AD2BC6 /* EDTSRangeSliderThumbLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSRangeSliderThumbLayer.swift; sourceTree = "<group>"; };
+		8E80C4462B21D43A00AD2BC6 /* EDTSRangeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSRangeSlider.swift; sourceTree = "<group>"; };
+		8EF498592B21B51700F6BB4B /* EDTSDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSDatePicker.swift; sourceTree = "<group>"; };
+		8EF4985C2B21B51700F6BB4B /* EDTSDatePickerTray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSDatePickerTray.swift; sourceTree = "<group>"; };
+		8EF4985D2B21B51700F6BB4B /* EDTSDatePickerTray.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTSDatePickerTray.xib; sourceTree = "<group>"; };
+		8EF4985F2B21B51700F6BB4B /* EDTSMonthYearPickerTray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSMonthYearPickerTray.swift; sourceTree = "<group>"; };
+		8EF498602B21B51700F6BB4B /* EDTSMonthYearPickerTray.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTSMonthYearPickerTray.xib; sourceTree = "<group>"; };
+		8EF498612B21B51700F6BB4B /* EDTSDatePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTSDatePicker.xib; sourceTree = "<group>"; };
+		8EF498692B21B55F00F6BB4B /* EDTSBaseTray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTSBaseTray.swift; sourceTree = "<group>"; };
+		8EF4986C2B21B61100F6BB4B /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
 		F230C22728DD909A0056ADBE /* EDTSOTP.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EDTSOTP.xib; sourceTree = "<group>"; };
 		F230C22928DD90AA0056ADBE /* EDTSOTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSOTP.swift; sourceTree = "<group>"; };
 		F230C22B28DD92620056ADBE /* EDTSOTPDigit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTSOTPDigit.swift; sourceTree = "<group>"; };
@@ -109,6 +195,235 @@
 			path = List;
 			sourceTree = "<group>";
 		};
+		8E5FE3F72B22AF1C0003C66D /* EDTSUIView */ = {
+			isa = PBXGroup;
+			children = (
+				8E5FE3F82B22AF2A0003C66D /* EDTSUIView.swift */,
+			);
+			path = EDTSUIView;
+			sourceTree = "<group>";
+		};
+		8E5FE4332B22B1D20003C66D /* QRCodeView */ = {
+			isa = PBXGroup;
+			children = (
+				8E5FE4392B22B1D20003C66D /* EDTSQRCodeViewTray */,
+				8E5FE4382B22B1D20003C66D /* EDTSQRCodeView.swift */,
+				8E5FE4342B22B1D20003C66D /* EDTSQRCodeView.xib */,
+			);
+			path = QRCodeView;
+			sourceTree = "<group>";
+		};
+		8E5FE4392B22B1D20003C66D /* EDTSQRCodeViewTray */ = {
+			isa = PBXGroup;
+			children = (
+				8E5FE43A2B22B1D20003C66D /* EDTSQRCodeViewTray.swift */,
+				8E5FE43B2B22B1D20003C66D /* EDTSQRCodeViewTray.xib */,
+			);
+			path = EDTSQRCodeViewTray;
+			sourceTree = "<group>";
+		};
+		8E5FE4422B22B2130003C66D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8E5FE4432B22B21E0003C66D /* EDTSQRCodeHelper.swift */,
+				8E5FE4732B22C7590003C66D /* EDTSTextHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8E5FE44C2B22B9DC0003C66D /* MenuTray */ = {
+			isa = PBXGroup;
+			children = (
+				8E5FE44F2B22B9DC0003C66D /* Cell */,
+				8E5FE44D2B22B9DC0003C66D /* EDTSMenuTray.swift */,
+				8E5FE44E2B22B9DC0003C66D /* EDTSMenuTray.xib */,
+			);
+			path = MenuTray;
+			sourceTree = "<group>";
+		};
+		8E5FE44F2B22B9DC0003C66D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8E5FE4502B22B9DC0003C66D /* EDTSMenuTrayCell.swift */,
+				8E5FE4512B22B9DC0003C66D /* EDTSMenuTrayCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8E5FE45B2B22C35D0003C66D /* AlertTray */ = {
+			isa = PBXGroup;
+			children = (
+				8E5FE45C2B22C35D0003C66D /* EDTSAlertTray.swift */,
+				8E5FE45D2B22C35D0003C66D /* EDTSAlertTray.xib */,
+			);
+			path = AlertTray;
+			sourceTree = "<group>";
+		};
+		8E5FE4652B22C64A0003C66D /* InformationView */ = {
+			isa = PBXGroup;
+			children = (
+				8E5FE4662B22C64A0003C66D /* InformationViewTray */,
+				8E5FE46A2B22C64A0003C66D /* EDTSInformationView.swift */,
+				8E5FE4692B22C64A0003C66D /* EDTSInformationView.xib */,
+			);
+			path = InformationView;
+			sourceTree = "<group>";
+		};
+		8E5FE4662B22C64A0003C66D /* InformationViewTray */ = {
+			isa = PBXGroup;
+			children = (
+				8E5FE4682B22C64A0003C66D /* EDTSInformationViewTray.swift */,
+				8E5FE4672B22C64A0003C66D /* EDTSInformationViewTray.xib */,
+			);
+			path = InformationViewTray;
+			sourceTree = "<group>";
+		};
+		8E5FE47C2B22CD2E0003C66D /* CheckboxOptions */ = {
+			isa = PBXGroup;
+			children = (
+				8E5FE47E2B22CD2E0003C66D /* Cell */,
+				8E5FE4812B22CD2E0003C66D /* EDTSCheckboxOptions.swift */,
+				8E5FE47D2B22CD2E0003C66D /* EDTSCheckboxOptions.xib */,
+			);
+			path = CheckboxOptions;
+			sourceTree = "<group>";
+		};
+		8E5FE47E2B22CD2E0003C66D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8E5FE4802B22CD2E0003C66D /* EDTSCheckboxOptionsCell.swift */,
+				8E5FE47F2B22CD2E0003C66D /* EDTSCheckboxOptionsCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8E5FE4822B22CD2E0003C66D /* RadioOptions */ = {
+			isa = PBXGroup;
+			children = (
+				8E5FE4842B22CD2E0003C66D /* Cell */,
+				8E5FE4872B22CD2E0003C66D /* EDTSRadioOptions.swift */,
+				8E5FE4832B22CD2E0003C66D /* EDTSRadioOptions.xib */,
+			);
+			path = RadioOptions;
+			sourceTree = "<group>";
+		};
+		8E5FE4842B22CD2E0003C66D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8E5FE4852B22CD2E0003C66D /* EDTSRadioOptionsCell.swift */,
+				8E5FE4862B22CD2E0003C66D /* EDTSRadioOptionsCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8E5FE4902B22CE270003C66D /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				8E5FE4932B22CE750003C66D /* Entities */,
+				8E5FE47C2B22CD2E0003C66D /* CheckboxOptions */,
+				8E5FE4822B22CD2E0003C66D /* RadioOptions */,
+			);
+			path = Options;
+			sourceTree = "<group>";
+		};
+		8E5FE4932B22CE750003C66D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8E5FE4912B22CE5F0003C66D /* Option.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		8E80C42D2B21CD5400AD2BC6 /* FittedCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				8E80C42E2B21CD5400AD2BC6 /* EDTSFittedCollectionView.swift */,
+			);
+			path = FittedCollectionView;
+			sourceTree = "<group>";
+		};
+		8E80C42F2B21CD5400AD2BC6 /* FittedTableView */ = {
+			isa = PBXGroup;
+			children = (
+				8E80C4302B21CD5400AD2BC6 /* EDTSFittedTableView.swift */,
+			);
+			path = FittedTableView;
+			sourceTree = "<group>";
+		};
+		8E80C4422B21D43A00AD2BC6 /* RangeSlider */ = {
+			isa = PBXGroup;
+			children = (
+				8E80C4432B21D43A00AD2BC6 /* Layers */,
+				8E80C4462B21D43A00AD2BC6 /* EDTSRangeSlider.swift */,
+			);
+			path = RangeSlider;
+			sourceTree = "<group>";
+		};
+		8E80C4432B21D43A00AD2BC6 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				8E80C4442B21D43A00AD2BC6 /* EDTSRangeSliderTrackLayer.swift */,
+				8E80C4452B21D43A00AD2BC6 /* EDTSRangeSliderThumbLayer.swift */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		8EF498582B21B51700F6BB4B /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				8EF4985A2B21B51700F6BB4B /* Tray */,
+				8EF498592B21B51700F6BB4B /* EDTSDatePicker.swift */,
+				8EF498612B21B51700F6BB4B /* EDTSDatePicker.xib */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		8EF4985A2B21B51700F6BB4B /* Tray */ = {
+			isa = PBXGroup;
+			children = (
+				8EF4985B2B21B51700F6BB4B /* DatePickerTray */,
+				8EF4985E2B21B51700F6BB4B /* MonthYearPickerTray */,
+			);
+			path = Tray;
+			sourceTree = "<group>";
+		};
+		8EF4985B2B21B51700F6BB4B /* DatePickerTray */ = {
+			isa = PBXGroup;
+			children = (
+				8EF4985C2B21B51700F6BB4B /* EDTSDatePickerTray.swift */,
+				8EF4985D2B21B51700F6BB4B /* EDTSDatePickerTray.xib */,
+			);
+			path = DatePickerTray;
+			sourceTree = "<group>";
+		};
+		8EF4985E2B21B51700F6BB4B /* MonthYearPickerTray */ = {
+			isa = PBXGroup;
+			children = (
+				8EF4985F2B21B51700F6BB4B /* EDTSMonthYearPickerTray.swift */,
+				8EF498602B21B51700F6BB4B /* EDTSMonthYearPickerTray.xib */,
+			);
+			path = MonthYearPickerTray;
+			sourceTree = "<group>";
+		};
+		8EF498682B21B55100F6BB4B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8EF498692B21B55F00F6BB4B /* EDTSBaseTray.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8EF4986B2B21B5EE00F6BB4B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8EF4986C2B21B61100F6BB4B /* Extension+Date.swift */,
+				8E5FE4752B22C8230003C66D /* Extension+UITextView.swift */,
+				8E5FE46F2B22C68E0003C66D /* Extension+UILabel.swift */,
+				8E5FE4712B22C6B70003C66D /* Extension+NSAttributedString.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F230C22628DD8EEE0056ADBE /* OTP */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,10 +463,14 @@
 		F26010A328D02CAC0097FD95 /* EDTSUI */ = {
 			isa = PBXGroup;
 			children = (
+				8EF498682B21B55100F6BB4B /* Base */,
+				8EF4986B2B21B5EE00F6BB4B /* Extensions */,
+				8E5FE4422B22B2130003C66D /* Helpers */,
 				F26010AB28D02D0A0097FD95 /* Atoms */,
 				F26010AC28D02D100097FD95 /* Components */,
 				F2F10B9128D4485400985AE8 /* Modules */,
 				F26010A428D02CAC0097FD95 /* EDTSUI.h */,
+				8E80C42B2B21CA7500AD2BC6 /* Assets.xcassets */,
 			);
 			path = EDTSUI;
 			sourceTree = "<group>";
@@ -175,6 +494,16 @@
 				F2F10B9228D44BBF00985AE8 /* Textfield */,
 				F2E9DF8728ED6FAD00EB301F /* Stepper */,
 				F288C56D292A206D0073AE5B /* Toaster */,
+				8EF498582B21B51700F6BB4B /* DatePicker */,
+				8E80C42D2B21CD5400AD2BC6 /* FittedCollectionView */,
+				8E80C42F2B21CD5400AD2BC6 /* FittedTableView */,
+				8E80C4422B21D43A00AD2BC6 /* RangeSlider */,
+				8E5FE3F72B22AF1C0003C66D /* EDTSUIView */,
+				8E5FE4332B22B1D20003C66D /* QRCodeView */,
+				8E5FE44C2B22B9DC0003C66D /* MenuTray */,
+				8E5FE45B2B22C35D0003C66D /* AlertTray */,
+				8E5FE4652B22C64A0003C66D /* InformationView */,
+				8E5FE4902B22CE270003C66D /* Options */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -326,15 +655,30 @@
 			files = (
 				F26010BB28D03B580097FD95 /* EDTSPopUp.xib in Resources */,
 				2584CDCC293DAE1000A45A21 /* EDTSDropZone.xib in Resources */,
+				8E5FE48E2B22CD2E0003C66D /* EDTSRadioOptionsCell.xib in Resources */,
+				8E5FE4412B22B1D20003C66D /* EDTSQRCodeViewTray.xib in Resources */,
 				F2E9DF8B28ED70A500EB301F /* EDTSStepper.xib in Resources */,
+				8E5FE4532B22B9DC0003C66D /* EDTSMenuTray.xib in Resources */,
+				8EF498672B21B51700F6BB4B /* EDTSDatePicker.xib in Resources */,
+				8E5FE4552B22B9DD0003C66D /* EDTSMenuTrayCell.xib in Resources */,
+				8E80C42C2B21CA7500AD2BC6 /* Assets.xcassets in Resources */,
 				F288C571292A20930073AE5B /* EDTSToaster.xib in Resources */,
 				F25CB5C92925F80D008D4306 /* EDTSSuccessPage.xib in Resources */,
+				8E5FE46B2B22C64A0003C66D /* EDTSInformationViewTray.xib in Resources */,
+				8E5FE4892B22CD2E0003C66D /* EDTSCheckboxOptionsCell.xib in Resources */,
 				F297DC7028D96C500096D2FA /* EDTSTextField.xib in Resources */,
+				8E5FE43C2B22B1D20003C66D /* EDTSQRCodeView.xib in Resources */,
+				8E5FE46D2B22C64A0003C66D /* EDTSInformationView.xib in Resources */,
 				F263E67528E2A60E0084A3D6 /* EDTSOnboarding.xib in Resources */,
 				F230C22828DD909A0056ADBE /* EDTSOTP.xib in Resources */,
+				8E5FE45F2B22C35D0003C66D /* EDTSAlertTray.xib in Resources */,
 				25943A282938536C00BCEBA0 /* EDTSList.xib in Resources */,
 				2504E6F62937060600B1F7CF /* EDTSDropdown.xib in Resources */,
 				F263E67728E2A8320084A3D6 /* EDTSOnboardingContent.xib in Resources */,
+				8EF498662B21B51700F6BB4B /* EDTSMonthYearPickerTray.xib in Resources */,
+				8EF498642B21B51700F6BB4B /* EDTSDatePickerTray.xib in Resources */,
+				8E5FE48C2B22CD2E0003C66D /* EDTSRadioOptions.xib in Resources */,
+				8E5FE4882B22CD2E0003C66D /* EDTSCheckboxOptions.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,19 +693,47 @@
 				F263E67928E2A83C0084A3D6 /* EDTSOnboardingContent.swift in Sources */,
 				F2E9DF8928ED709700EB301F /* EDTSStepper.swift in Sources */,
 				F263E67B28E2A9CE0084A3D6 /* EDTSOnboardingData.swift in Sources */,
+				8E5FE3F92B22AF2A0003C66D /* EDTSUIView.swift in Sources */,
+				8E80C4492B21D43A00AD2BC6 /* EDTSRangeSlider.swift in Sources */,
+				8EF498632B21B51700F6BB4B /* EDTSDatePickerTray.swift in Sources */,
+				8E5FE4922B22CE5F0003C66D /* Option.swift in Sources */,
+				8EF4986D2B21B61100F6BB4B /* Extension+Date.swift in Sources */,
+				8EF4986A2B21B55F00F6BB4B /* EDTSBaseTray.swift in Sources */,
 				F297DC7228D96C830096D2FA /* EDTSTextField.swift in Sources */,
+				8E5FE46C2B22C64A0003C66D /* EDTSInformationViewTray.swift in Sources */,
 				25943A262938536200BCEBA0 /* EDTSList.swift in Sources */,
 				F263E67328E2A5F60084A3D6 /* EDTSOnboarding.swift in Sources */,
+				8E5FE48B2B22CD2E0003C66D /* EDTSCheckboxOptions.swift in Sources */,
+				8E5FE43F2B22B1D20003C66D /* EDTSQRCodeView.swift in Sources */,
+				8E5FE48A2B22CD2E0003C66D /* EDTSCheckboxOptionsCell.swift in Sources */,
 				F288C570292A20930073AE5B /* EDTSToaster.swift in Sources */,
+				8E5FE48D2B22CD2E0003C66D /* EDTSRadioOptionsCell.swift in Sources */,
+				8E5FE45E2B22C35D0003C66D /* EDTSAlertTray.swift in Sources */,
+				8E80C4322B21CD5400AD2BC6 /* EDTSFittedTableView.swift in Sources */,
+				8EF498652B21B51700F6BB4B /* EDTSMonthYearPickerTray.swift in Sources */,
 				F25CB5C82925F80D008D4306 /* EDTSSuccessPage.swift in Sources */,
 				2584CDCA293DAE0900A45A21 /* EDTSDropZone.swift in Sources */,
 				F26010BC28D03B580097FD95 /* EDTSPopUp.swift in Sources */,
+				8E5FE48F2B22CD2E0003C66D /* EDTSRadioOptions.swift in Sources */,
+				8E80C4472B21D43A00AD2BC6 /* EDTSRangeSliderTrackLayer.swift in Sources */,
+				8E5FE4742B22C7590003C66D /* EDTSTextHelper.swift in Sources */,
 				F26010C728D03ECB0097FD95 /* EDTSPopUpStyle.swift in Sources */,
+				8E5FE4722B22C6B70003C66D /* Extension+NSAttributedString.swift in Sources */,
+				8E80C4312B21CD5400AD2BC6 /* EDTSFittedCollectionView.swift in Sources */,
+				8E5FE4542B22B9DD0003C66D /* EDTSMenuTrayCell.swift in Sources */,
+				8E5FE4762B22C8230003C66D /* Extension+UITextView.swift in Sources */,
 				2504E6F4293705F600B1F7CF /* EDTSDropdown.swift in Sources */,
 				F230C22C28DD92620056ADBE /* EDTSOTPDigit.swift in Sources */,
+				8E80C4482B21D43A00AD2BC6 /* EDTSRangeSliderThumbLayer.swift in Sources */,
 				F25CB5CB2925F9EF008D4306 /* EDTSSuccessPageStyle.swift in Sources */,
 				F26010AF28D02EDF0097FD95 /* EDTSColor.swift in Sources */,
 				F230C22A28DD90AA0056ADBE /* EDTSOTP.swift in Sources */,
+				8E5FE4702B22C68E0003C66D /* Extension+UILabel.swift in Sources */,
+				8E5FE4402B22B1D20003C66D /* EDTSQRCodeViewTray.swift in Sources */,
+				8EF498622B21B51700F6BB4B /* EDTSDatePicker.swift in Sources */,
+				8E5FE46E2B22C64A0003C66D /* EDTSInformationView.swift in Sources */,
+				8E5FE4522B22B9DC0003C66D /* EDTSMenuTray.swift in Sources */,
+				8E5FE4442B22B21E0003C66D /* EDTSQRCodeHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

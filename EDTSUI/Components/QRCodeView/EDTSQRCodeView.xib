@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EDTSQRCodeView" customModule="EDTSUI" customModuleProvider="target">
+            <connections>
+                <outlet property="image" destination="zhP-r9-q7y" id="Aj9-CU-yl5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="119"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zhP-r9-q7y">
+                    <rect key="frame" x="0.0" y="1.6666666666666643" width="135" height="116"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="VhW-Fo-6hX" appends="YES" id="vgr-1H-jxV"/>
+                    </connections>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="zhP-r9-q7y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2PF-h1-Bzt"/>
+                <constraint firstItem="zhP-r9-q7y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ik6-P7-fpM"/>
+                <constraint firstAttribute="bottom" secondItem="zhP-r9-q7y" secondAttribute="bottom" id="aOG-XK-4BM"/>
+                <constraint firstAttribute="trailing" secondItem="zhP-r9-q7y" secondAttribute="trailing" id="o0p-Ue-BjJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-199.23664122137404" y="-236.26760563380282"/>
+        </view>
+        <tapGestureRecognizer id="VhW-Fo-6hX">
+            <connections>
+                <action selector="didTapImage:" destination="-1" id="qVi-HJ-t6a"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="qrcode" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

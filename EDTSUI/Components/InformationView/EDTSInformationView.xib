@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Regular.otf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EDTSInformationView" customModule="EDTSUI" customModuleProvider="target">
+            <connections>
+                <outlet property="icon" destination="pTS-eJ-ySe" id="NfN-Cg-0oB"/>
+                <outlet property="label" destination="CSL-IE-LsG" id="LAD-HE-OhK"/>
+                <outlet property="moreLabel" destination="me1-xv-eEI" id="qQ2-35-ajM"/>
+                <outlet property="view" destination="kuz-Ck-tja" id="8oX-KU-syQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="76"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kuz-Ck-tja" userLabel="Custom UIVIew" customClass="EDTSUIView" customModule="EDTSUI" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="449" height="76"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BhN-AH-hlA">
+                            <rect key="frame" x="38" y="12" width="401" height="54"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaksi pada jam 23:45 - 00:15 WIB tidak dapat dilakukan sesuai dengan jadwal pemeliharaan sistem pihak operator." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSL-IE-LsG" userLabel="label">
+                                    <rect key="frame" x="0.0" y="0.0" width="401" height="34.666666666666664"/>
+                                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
+                                    <color key="textColor" name="black50"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Selengkapnya" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="me1-xv-eEI" userLabel="more">
+                                    <rect key="frame" x="0.0" y="39.666666666666664" width="401" height="14.333333333333336"/>
+                                    <gestureRecognizers/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                    <color key="textColor" name="Primary30"/>
+                                    <nil key="highlightedColor"/>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="UtV-ib-K90" appends="YES" id="6QC-1P-ydq"/>
+                                    </connections>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_information_blue" translatesAutoresizingMaskIntoConstraints="NO" id="pTS-eJ-ySe" userLabel="icon">
+                            <rect key="frame" x="12" y="12" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="Mfb-aK-QYz"/>
+                                <constraint firstAttribute="height" constant="16" id="YR1-II-Ysa"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.066666666669999999" green="0.47058823529999999" blue="0.83137254900000002" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="BhN-AH-hlA" secondAttribute="bottom" constant="10" id="2Yg-LF-l0k"/>
+                        <constraint firstItem="pTS-eJ-ySe" firstAttribute="top" secondItem="kuz-Ck-tja" secondAttribute="top" constant="12" id="DGI-0B-dAz"/>
+                        <constraint firstItem="BhN-AH-hlA" firstAttribute="leading" secondItem="pTS-eJ-ySe" secondAttribute="trailing" constant="10" id="ZtU-Ww-GOR"/>
+                        <constraint firstItem="BhN-AH-hlA" firstAttribute="top" secondItem="kuz-Ck-tja" secondAttribute="top" constant="12" id="u3v-Ke-2xV"/>
+                        <constraint firstItem="pTS-eJ-ySe" firstAttribute="leading" secondItem="kuz-Ck-tja" secondAttribute="leading" constant="12" id="wMy-ag-f28"/>
+                        <constraint firstAttribute="trailing" secondItem="BhN-AH-hlA" secondAttribute="trailing" constant="10" id="z2t-k4-hWW"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kuz-Ck-tja" secondAttribute="trailing" id="GgB-Mv-Tie"/>
+                <constraint firstItem="kuz-Ck-tja" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Jeq-uU-e4C"/>
+                <constraint firstAttribute="bottom" secondItem="kuz-Ck-tja" secondAttribute="bottom" id="eXw-zM-gh8"/>
+                <constraint firstItem="kuz-Ck-tja" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kXQ-UO-c5J"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="40.458015267175568" y="-251.40845070422537"/>
+        </view>
+        <tapGestureRecognizer id="UtV-ib-K90">
+            <connections>
+                <action selector="didTapMoreLabel:" destination="-1" id="bYf-sv-isq"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="ic_information_blue" width="21.333333969116211" height="21.333333969116211"/>
+        <namedColor name="Primary30">
+            <color red="0.066666666666666666" green="0.47058823529411764" blue="0.83137254901960789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="black50">
+            <color red="0.4392156862745098" green="0.44705882352941179" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

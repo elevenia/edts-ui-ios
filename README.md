@@ -29,6 +29,20 @@ EDTSUI is an iOS SDK that help developer to design user interface based on EDTS 
 - [x] List
 - [x] Dropdown
 - [x] DropZone
+- [x] BaseTray 
+- [x] DatePicker 
+- [x] FittedTableView 
+- [x] FittedCollectionView 
+- [x] RangeSlider 
+- [x] UIView 
+- [x] QRCodeView 
+- [x] MenuTray 
+- [x] AlertTray 
+- [x] InformationView 
+- [x] CheckboxOptions 
+- [x] RadioOptions 
+
+
 
 ## Installation
 
