@@ -26,9 +26,9 @@ public class EDTSCheckboxOptionsCell: UICollectionViewCell {
     public func update(with item: Option, isSelected: Bool = false) {
         // Icon
         if isSelected {
-            self.checkboxIcon.image = checkboxActiveImage ?? UIImage(named: "ic_checkbox_checked", in: Bundle(for: EDTSMenuTrayCell.self), compatibleWith: nil)
+            self.checkboxIcon.image = checkboxActiveImage ?? UIImage(named: "ic_checkbox_checked", in: Bundle(for: EDTSCheckboxOptionsCell.self), compatibleWith: nil)
         } else {
-            self.checkboxIcon.image = checkboxInactiveImage ?? UIImage(named: "ic_checkbox_uncheck", in: Bundle(for: EDTSMenuTrayCell.self), compatibleWith: nil)
+            self.checkboxIcon.image = checkboxInactiveImage ?? UIImage(named: "ic_checkbox_uncheck", in: Bundle(for: EDTSCheckboxOptionsCell.self), compatibleWith: nil)
         }
         
         self.label.text = item.label

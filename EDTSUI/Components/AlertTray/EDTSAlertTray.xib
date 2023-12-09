@@ -87,7 +87,7 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="xym-ii-RJL">
                                             <rect key="frame" x="32" y="32" width="329" height="298.66666666666669"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="illustration_indomaret_welcome" translatesAutoresizingMaskIntoConstraints="NO" id="9oh-T6-1eQ">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9oh-T6-1eQ">
                                                     <rect key="frame" x="74.666666666666686" y="0.0" width="180" height="180"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="180" id="Lb7-jb-zx9"/>
@@ -194,7 +194,6 @@
     </objects>
     <resources>
         <image name="ic_close_gray" width="32" height="32"/>
-        <image name="illustration_indomaret_welcome" width="161" height="181"/>
         <namedColor name="Primary30">
             <color red="0.066666666666666666" green="0.47058823529411764" blue="0.83137254901960789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "EDTSUI"
-  spec.version      = "0.1.8"
+  spec.version      = "0.1.9"
   spec.summary      = "EDTSUI is an iOS SDK for design user interface"
   spec.description  = "EDTSUI is an iOS SDK that help developer to design user interface based on EDTS Design System."
 
@@ -78,66 +78,76 @@ Pod::Spec.new do |spec|
     ss.resources = ['EDTSUI/Components/Dropdown/*.{xib}']
   end
 
-  spec.subspec 'BaseTray' do |ss|
-    ss.source_files = 'EDTSUI/Components/BaseTray'
-    ss.resources = ['EDTSUI/Components/BaseTray/*.{xib}']
+  spec.subspec 'Base' do |ss|
+    ss.source_files = 'EDTSUI/Base/**/*.{swift}'
+  end
+
+  spec.subspec 'Extensions' do |ss|
+    ss.source_files = 'EDTSUI/Extensions/*.{swift}'
+  end
+
+  spec.subspec 'Helpers' do |ss|
+    ss.source_files = 'EDTSUI/Helpers/*.{swift}'
   end
 
   spec.subspec 'DatePicker' do |ss|
-    ss.source_files = 'EDTSUI/Components/DatePicker'
-    ss.resources = ['EDTSUI/Components/DatePicker/*.{xib}']
+    ss.source_files = 'EDTSUI/Components/DatePicker/**/*.{swift}'
+    ss.resources = ['EDTSUI/Components/DatePicker/**/*.{xib}', 'EDTSUI/*.xcassets']
+    ss.dependency "EDTSUI/Base"
+    ss.dependency "EDTSUI/Extensions"
+    ss.dependency "EDTSUI/Textfield"
   end
 
   spec.subspec 'FittedTableView' do |ss|
     ss.source_files = 'EDTSUI/Components/FittedTableView'
-    ss.resources = ['EDTSUI/Components/FittedTableView/*.{xib}']
   end
 
   spec.subspec 'FittedCollectionView' do |ss|
     ss.source_files = 'EDTSUI/Components/FittedCollectionView'
-    ss.resources = ['EDTSUI/Components/FittedCollectionView/*.{xib}']
   end
 
   spec.subspec 'RangeSlider' do |ss|
-    ss.source_files = 'EDTSUI/Components/RangeSlider'
-    ss.resources = ['EDTSUI/Components/RangeSlider/*.{xib}']
+    ss.source_files = 'EDTSUI/Components/RangeSlider/**/*.{swift}'
+    ss.dependency "EDTSUI/Color"
   end
 
   spec.subspec 'EDTSUIView' do |ss|
     ss.source_files = 'EDTSUI/Components/EDTSUIView'
-    ss.resources = ['EDTSUI/Components/EDTSUIView/*.{xib}']
   end
 
   spec.subspec 'QRCodeView' do |ss|
-    ss.source_files = 'EDTSUI/Components/QRCodeView'
-    ss.resources = ['EDTSUI/Components/QRCodeView/*.{xib}']
+    ss.source_files = 'EDTSUI/Components/QRCodeView/**/*.{swift}'
+    ss.resources = ['EDTSUI/Components/QRCodeView/**/*.{xib}', 'EDTSUI/*.xcassets']
+    ss.dependency "EDTSUI/Base"
+    ss.dependency "EDTSUI/Helpers"
   end
 
   spec.subspec 'MenuTray' do |ss|
-    ss.source_files = 'EDTSUI/Components/MenuTray'
-    ss.resources = ['EDTSUI/Components/MenuTray/*.{xib}']
+    ss.source_files = 'EDTSUI/Components/MenuTray/**/*.{swift}'
+    ss.resources = ['EDTSUI/Components/MenuTray/**/*.{xib}', 'EDTSUI/*.xcassets']
+    ss.dependency "EDTSUI/Base"
   end
 
   spec.subspec 'AlertTray' do |ss|
     ss.source_files = 'EDTSUI/Components/AlertTray'
-    ss.resources = ['EDTSUI/Components/AlertTray/*.{xib}']
+    ss.resources = ['EDTSUI/Components/AlertTray/**/*.{xib}', 'EDTSUI/*.xcassets']
+    ss.dependency "EDTSUI/Base"
   end
 
   spec.subspec 'InformationView' do |ss|
-    ss.source_files = 'EDTSUI/Components/InformationView'
-    ss.resources = ['EDTSUI/Components/InformationView/*.{xib}']
+    ss.source_files = 'EDTSUI/Components/InformationView/**/*.{swift}'
+    ss.resources = ['EDTSUI/Components/InformationView/**/*.{xib}', 'EDTSUI/*.xcassets']
+    ss.dependency "EDTSUI/Base"
+    ss.dependency "EDTSUI/Extensions"
+    ss.dependency "EDTSUI/Helpers"
+    ss.dependency "EDTSUI/EDTSUIView"
   end
 
-  spec.subspec 'CheckboxOptions' do |ss|
-    ss.source_files = 'EDTSUI/Components/CheckboxOptions'
-    ss.resources = ['EDTSUI/Components/CheckboxOptions/*.{xib}']
+  spec.subspec 'Options' do |ss|
+    ss.source_files = 'EDTSUI/Components/Options/**/*.{swift}'
+    ss.resources = ['EDTSUI/Components/Options/**/*.{xib}', 'EDTSUI/*.xcassets']
+    ss.dependency "EDTSUI/Base"
+    ss.dependency "EDTSUI/FittedCollectionView"
   end
-
-  spec.subspec 'RadioOptions' do |ss|
-    ss.source_files = 'EDTSUI/Components/RadioOptions'
-    ss.resources = ['EDTSUI/Components/RadioOptions/*.{xib}']
-  end
-
-
 
 end

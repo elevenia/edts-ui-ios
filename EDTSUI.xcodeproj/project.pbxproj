@@ -408,7 +408,7 @@
 		8EF498682B21B55100F6BB4B /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				8EF498692B21B55F00F6BB4B /* EDTSBaseTray.swift */,
+				8EFAB9942B23EF2000BEAB6D /* BaseTray */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -422,6 +422,14 @@
 				8E5FE4712B22C6B70003C66D /* Extension+NSAttributedString.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8EFAB9942B23EF2000BEAB6D /* BaseTray */ = {
+			isa = PBXGroup;
+			children = (
+				8EF498692B21B55F00F6BB4B /* EDTSBaseTray.swift */,
+			);
+			path = BaseTray;
 			sourceTree = "<group>";
 		};
 		F230C22628DD8EEE0056ADBE /* OTP */ = {

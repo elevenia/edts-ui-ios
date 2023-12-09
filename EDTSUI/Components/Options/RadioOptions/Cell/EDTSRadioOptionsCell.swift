@@ -26,9 +26,9 @@ public class EDTSRadioOptionsCell: UICollectionViewCell {
     public func update(with item: Option, isSelected: Bool = false) {
         // Icon
         if isSelected {
-            self.radioIcon.image = radioActiveImage ?? UIImage(named: "ic_radio_button_on", in: Bundle(for: EDTSMenuTrayCell.self), compatibleWith: nil)
+            self.radioIcon.image = radioActiveImage ?? UIImage(named: "ic_radio_button_on", in: Bundle(for: EDTSRadioOptionsCell.self), compatibleWith: nil)
         } else {
-            self.radioIcon.image = radioInactiveImage ?? UIImage(named: "ic_radio_button_off", in: Bundle(for: EDTSMenuTrayCell.self), compatibleWith: nil)
+            self.radioIcon.image = radioInactiveImage ?? UIImage(named: "ic_radio_button_off", in: Bundle(for: EDTSRadioOptionsCell.self), compatibleWith: nil)
         }
         
         self.label.text = item.label
