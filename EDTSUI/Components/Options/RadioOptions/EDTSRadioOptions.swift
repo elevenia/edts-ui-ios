@@ -15,12 +15,12 @@ public class EDTSRadioOptions: UIView {
     @IBInspectable
     public var radioInactiveImage: UIImage? = nil
     
-    public var options: [Option] = [] {
+    public var options: [EDTSOption] = [] {
         didSet {
             self.collectionView.reloadData()
         }
     }
-    public var selected: Option? = nil {
+    public var selected: EDTSOption? = nil {
         didSet {
             self.didSetSelected()
         }
@@ -30,7 +30,7 @@ public class EDTSRadioOptions: UIView {
             self.collectionView.reloadData()
         }
     }
-    public var onChange: ((Option?) -> Void)?
+    public var onChange: ((EDTSOption?) -> Void)?
     
     /// Use this closure to perform some actions on the cell, such as styling, etc.
     public var onSetupCell: ((EDTSRadioOptionsCell) -> Void)?

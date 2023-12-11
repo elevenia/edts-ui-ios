@@ -23,7 +23,7 @@ public class EDTSCheckboxOptionsCell: UICollectionViewCell {
         super.awakeFromNib()
     }
     
-    public func update(with item: Option, isSelected: Bool = false) {
+    public func update(with item: EDTSOption, isSelected: Bool = false) {
         // Icon
         if isSelected {
             self.checkboxIcon.image = checkboxActiveImage ?? UIImage(named: "ic_checkbox_checked", in: Bundle(for: EDTSCheckboxOptionsCell.self), compatibleWith: nil)

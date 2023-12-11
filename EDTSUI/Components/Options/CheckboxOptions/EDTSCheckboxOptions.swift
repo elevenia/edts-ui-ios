@@ -16,12 +16,12 @@ public class EDTSCheckboxOptions: UIView {
     @IBInspectable
     public var checkboxInactiveImage: UIImage? = nil
     
-    public var options: [Option] = [] {
+    public var options: [EDTSOption] = [] {
         didSet {
             self.collectionView.reloadData()
         }
     }
-    public var selected: [Option] = [] {
+    public var selected: [EDTSOption] = [] {
         didSet {
             self.didSetSelected()
         }
@@ -31,7 +31,7 @@ public class EDTSCheckboxOptions: UIView {
             self.collectionView.reloadData()
         }
     }
-    public var onChange: (([Option]) -> Void)?
+    public var onChange: (([EDTSOption]) -> Void)?
     
     /// Use this closure to perform some actions on the cell, such as styling, etc.
     public var onSetupCell: ((EDTSCheckboxOptionsCell) -> Void)?

@@ -23,7 +23,7 @@ public class EDTSRadioOptionsCell: UICollectionViewCell {
         super.awakeFromNib()
     }
     
-    public func update(with item: Option, isSelected: Bool = false) {
+    public func update(with item: EDTSOption, isSelected: Bool = false) {
         // Icon
         if isSelected {
             self.radioIcon.image = radioActiveImage ?? UIImage(named: "ic_radio_button_on", in: Bundle(for: EDTSRadioOptionsCell.self), compatibleWith: nil)

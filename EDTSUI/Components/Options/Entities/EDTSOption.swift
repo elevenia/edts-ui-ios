@@ -1,5 +1,5 @@
 //
-//  Option.swift
+//  EDTSOption.swift
 //  EDTSUI
 //
 //  Created by M Alfin Syahruddin on 08/12/23.
@@ -8,7 +8,7 @@
 import Foundation
 
 
-public struct Option: Equatable {
+public struct EDTSOption: Equatable {
     /// unique identifier of the option
     public var id: Int?
     
@@ -24,12 +24,16 @@ public struct Option: Equatable {
     /// unique value of the option
     public var value: String
     
-    public init(id: Int? = nil, icon: String? = nil, label: String, secondaryLabel: String? = nil, value: String) {
+    /// additional data, you can store additional data if needed
+    public var additionalData: [String: Any?] = [:]
+    
+    public init(id: Int? = nil, icon: String? = nil, label: String = "", secondaryLabel: String? = nil, value: String = "", additionalData: [String: Any?] = [:]) {
         self.id = id
         self.icon = icon
         self.label = label
         self.secondaryLabel = secondaryLabel
         self.value = value
+        self.additionalData = additionalData
     }
     
     public static func ==(lhs: Self, rhs: Self) -> Bool {
