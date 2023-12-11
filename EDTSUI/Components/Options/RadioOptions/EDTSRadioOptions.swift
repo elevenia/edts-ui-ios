@@ -31,6 +31,9 @@ public class EDTSRadioOptions: UIView {
         }
     }
     public var onChange: ((Option?) -> Void)?
+    
+    /// Use this closure to perform some actions on the cell, such as styling, etc.
+    public var onSetupCell: ((EDTSRadioOptionsCell) -> Void)?
 
     
     @IBOutlet weak var collectionView: EDTSFittedCollectionView!
@@ -77,6 +80,8 @@ extension EDTSRadioOptions: UICollectionViewDelegate, UICollectionViewDataSource
         cell.radioInactiveImage = radioInactiveImage
         cell.update(with: item, isSelected: item.value == selected?.value)
         cell.separator.isHidden = !fullWidth
+        
+        self.onSetupCell?(cell)
         
         return cell
     }

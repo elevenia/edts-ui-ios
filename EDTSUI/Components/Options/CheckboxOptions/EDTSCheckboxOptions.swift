@@ -32,6 +32,9 @@ public class EDTSCheckboxOptions: UIView {
         }
     }
     public var onChange: (([Option]) -> Void)?
+    
+    /// Use this closure to perform some actions on the cell, such as styling, etc.
+    public var onSetupCell: ((EDTSCheckboxOptionsCell) -> Void)?
 
     
     @IBOutlet weak var collectionView: EDTSFittedCollectionView!
@@ -79,6 +82,8 @@ extension EDTSCheckboxOptions: UICollectionViewDelegate, UICollectionViewDataSou
         cell.checkboxInactiveImage = checkboxInactiveImage
         cell.update(with: item, isSelected: selected.contains(item))
         cell.separator.isHidden = !fullWidth
+        
+        self.onSetupCell?(cell)
         
         return cell
     }

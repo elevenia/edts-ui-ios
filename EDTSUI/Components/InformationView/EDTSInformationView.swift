@@ -15,8 +15,27 @@ public class EDTSInformationView: UIView {
     @IBOutlet weak var moreLabel: UILabel!
     
     public var parentVC: UIViewController?
-    public var trayTitle: String? = "Selengkapnya"
+    
+    /// Use this closure to perform some actions on the tray, such as styling, etc.
     public var onShowTray: ((EDTSInformationViewTray) -> Void)?
+    
+    @IBInspectable var bgColor: UIColor? = nil {
+        didSet {
+            self.updateUI()
+        }
+    }
+    
+    @IBInspectable var textColor: UIColor? = nil {
+        didSet {
+            self.updateUI()
+        }
+    }
+    
+    @IBInspectable var moreLabelColor: UIColor? = nil {
+        didSet {
+            self.updateUI()
+        }
+    }
 
     @IBInspectable
     public var iconImage: UIImage? = nil {
@@ -42,6 +61,9 @@ public class EDTSInformationView: UIView {
         }
     }
     
+    @IBInspectable
+    public var trayTitle: String? = "Selengkapnya"
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
@@ -61,12 +83,24 @@ public class EDTSInformationView: UIView {
     }
     
     private func updateUI() {
+        // Background color
+        if let bgColor {
+            self.view.backgroundColor = bgColor
+        }
+        
         // Text Label
         self.label.numberOfLines = self.numberOfLines
+        if let textColor {
+            self.label.textColor = textColor
+        }
 
         // "Selengkapnya" Label
         let lines = EDTSTextHelper.getTextLines(label: self.label)
         self.moreLabel.isHidden = self.numberOfLines == 0 || lines <= self.numberOfLines
+        
+        if let moreLabelColor {
+            self.moreLabel.textColor = moreLabelColor
+        }
     }
     
     @IBAction func didTapMoreLabel(_ sender: Any) {

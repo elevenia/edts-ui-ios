@@ -8,12 +8,12 @@
 import UIKit
 
 
-internal class EDTSDatePickerTray: EDTSBaseTray, EDTSBaseTrayDelegate {
-    @IBOutlet weak var containerTray: UIView!
-    @IBOutlet weak var containerTrayBottomAnchor: NSLayoutConstraint!
+public class EDTSDatePickerTray: EDTSBaseTray, EDTSBaseTrayDelegate {
+    @IBOutlet public weak var containerTray: UIView!
+    @IBOutlet public weak var containerTrayBottomAnchor: NSLayoutConstraint!
 
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var uiDatePicker: UIDatePicker!
+    @IBOutlet public weak var titleLabel: UILabel!
+    @IBOutlet public weak var uiDatePicker: UIDatePicker!
     
     public weak var datePicker: EDTSDatePicker?
     
@@ -21,11 +21,11 @@ internal class EDTSDatePickerTray: EDTSBaseTray, EDTSBaseTrayDelegate {
         super.init(nibName: "EDTSDatePickerTray", bundle: Bundle(for: EDTSDatePickerTray.self))
     }
     
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         super.init(nibName: "EDTSDatePickerTray", bundle: Bundle(for: EDTSDatePickerTray.self))
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         self.trayDelegate = self

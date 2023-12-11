@@ -8,14 +8,14 @@
 import UIKit
 
 
-internal class EDTSMonthYearPickerTray: EDTSBaseTray, EDTSBaseTrayDelegate {
+public class EDTSMonthYearPickerTray: EDTSBaseTray, EDTSBaseTrayDelegate {
     
     public weak var datePicker: EDTSDatePicker?
 
-    @IBOutlet weak var containerTray: UIView!
-    @IBOutlet weak var containerTrayBottomAnchor: NSLayoutConstraint!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var pickerView: UIPickerView!
+    @IBOutlet public weak var containerTray: UIView!
+    @IBOutlet public weak var containerTrayBottomAnchor: NSLayoutConstraint!
+    @IBOutlet public weak var titleLabel: UILabel!
+    @IBOutlet public weak var pickerView: UIPickerView!
     
     // default value: 10 years ago until 10 years ahead
     public var years = Array(
@@ -31,12 +31,12 @@ internal class EDTSMonthYearPickerTray: EDTSBaseTray, EDTSBaseTrayDelegate {
         super.init(nibName: "EDTSMonthYearPickerTray", bundle: Bundle(for: EDTSMonthYearPickerTray.self))
     }
     
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         super.init(nibName: "EDTSMonthYearPickerTray", bundle: Bundle(for: EDTSMonthYearPickerTray.self))
     }
     
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         self.trayDelegate = self
@@ -102,12 +102,12 @@ internal class EDTSMonthYearPickerTray: EDTSBaseTray, EDTSBaseTrayDelegate {
 
 
 extension EDTSMonthYearPickerTray: UIPickerViewDataSource, UIPickerViewDelegate {
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         // month & year
         return 2
     }
 
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if component == 0 {
             return self.months.count
         } else {
@@ -115,7 +115,7 @@ extension EDTSMonthYearPickerTray: UIPickerViewDataSource, UIPickerViewDelegate 
         }
     }
 
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    public func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if component == 0 {
             return self.getMonthName(self.months[row])
         } else {

@@ -20,7 +20,9 @@ public class EDTSMenuTray: EDTSBaseTray, EDTSBaseTrayDelegate {
     public var menus: [Menu] = []
     public var selectedIndex: Int = 0
     public var onSelect: ((Menu, Int) -> Void)?
-
+    
+    /// Use this closure to perform some actions on the cell, such as styling, etc.
+    public var onSetupCell: ((EDTSMenuTrayCell) -> Void)?
     
     public override init() {
         super.init(nibName: "EDTSMenuTray", bundle: Bundle(for: EDTSMenuTray.self))
@@ -77,6 +79,8 @@ extension EDTSMenuTray: UITableViewDelegate, UITableViewDataSource {
         
         let item = self.menus[indexPath.row]
         cell.update(with: item, isSelected: indexPath.row == selectedIndex, withIndicator: withIndicator)
+        
+        self.onSetupCell?(cell)
         
         return cell
     }

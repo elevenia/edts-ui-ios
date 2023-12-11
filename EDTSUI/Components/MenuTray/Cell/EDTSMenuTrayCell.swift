@@ -8,8 +8,8 @@
 import UIKit
 
 public class EDTSMenuTrayCell: UITableViewCell {
-    @IBOutlet weak var indicatorImage: UIImageView!
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet public weak var indicatorImage: UIImageView!
+    @IBOutlet public weak var label: UILabel!
 
     static let cellIdentifier = "EDTSMenuTrayCell"
     

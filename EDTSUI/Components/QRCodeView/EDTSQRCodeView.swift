@@ -9,9 +9,7 @@ import UIKit
 
 public class EDTSQRCodeView: UIView {
     @IBOutlet weak var image: UIImageView!
-    
-    public var parentVC: UIViewController?
-    
+        
     @IBInspectable
     public var textKey: String = "Kode"
     
@@ -22,6 +20,9 @@ public class EDTSQRCodeView: UIView {
         }
     }
     
+    public var parentVC: UIViewController?
+
+    // Use this closure to perform some actions on the tray, such as styling, etc.
     public var onShowTray: ((EDTSQRCodeViewTray) -> Void)?
     
     @IBInspectable

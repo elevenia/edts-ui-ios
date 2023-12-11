@@ -9,9 +9,6 @@ import UIKit
 
 public class EDTSDatePicker: UIView {
     
-    public var type: EDTSDatePickerType = .dateMonthYear
-    public weak var parentVC: UIViewController?
-
     @IBInspectable
     public var icon: UIImage? = nil {
         didSet {
@@ -26,6 +23,8 @@ public class EDTSDatePicker: UIView {
         }
     }
     
+    public weak var parentVC: UIViewController?
+    public var type: EDTSDatePickerType = .dateMonthYear
     public var options: [Date] = []
     public var selected: Date? = nil {
         didSet {
@@ -33,9 +32,14 @@ public class EDTSDatePicker: UIView {
         }
     }
     public var onChange: ((Date?) -> Void)?
+    
+    
+    // Use this closure to perform some actions on the tray, such as styling, etc.
+    public var onShowDatePickerTray: ((EDTSDatePickerTray) -> Void)?
+    public var onShowMonthYearPickerTray: ((EDTSMonthYearPickerTray) -> Void)?
 
     
-    @IBOutlet weak var edtsTextField: EDTSTextField!
+    @IBOutlet public weak var edtsTextField: EDTSTextField!
     
     public override func awakeFromNib() {
         super.awakeFromNib()
@@ -90,6 +94,7 @@ public class EDTSDatePicker: UIView {
             self.parentVC?.present(tray, animated: false) { [unowned self] in
                 tray.titleLabel.text = self.label
                 tray.setDate(self.selected)
+                self.onShowDatePickerTray?(tray)
             }
         case .monthYear:
             let tray = EDTSMonthYearPickerTray()
@@ -97,6 +102,7 @@ public class EDTSDatePicker: UIView {
             self.parentVC?.present(tray, animated: false) { [unowned self] in
                 tray.titleLabel.text = self.label
                 tray.setDate(self.selected)
+                self.onShowMonthYearPickerTray?(tray)
             }
         }
     }

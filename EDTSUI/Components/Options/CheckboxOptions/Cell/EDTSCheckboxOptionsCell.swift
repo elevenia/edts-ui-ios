@@ -8,11 +8,11 @@
 import UIKit
 
 public class EDTSCheckboxOptionsCell: UICollectionViewCell {
-    @IBOutlet weak var checkboxIcon: UIImageView!
-    @IBOutlet weak var icon: UIImageView!
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var secondaryLabel: UILabel!
-    @IBOutlet weak var separator: UIView!
+    @IBOutlet public weak var checkboxIcon: UIImageView!
+    @IBOutlet public weak var icon: UIImageView!
+    @IBOutlet public weak var label: UILabel!
+    @IBOutlet public weak var secondaryLabel: UILabel!
+    @IBOutlet public weak var separator: UIView!
     
     public static let cellIdentifier = "EDTSCheckboxOptionsCell"
     
