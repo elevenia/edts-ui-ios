@@ -59,15 +59,15 @@ public class EDTSAlertTray: EDTSBaseTray, EDTSBaseTrayDelegate {
 }
 
 public struct EDTSAlertTrayData {
-    var headerTitle: String = ""
-    var image: String
-    var title: String
-    var description: String
-    var buttonText: String = "Oke"
-    var buttonColor: UIColor?
-    var onTapButton: (() -> Void)? = nil
+    public var headerTitle: String
+    public var image: String
+    public var title: String
+    public var description: String
+    public var buttonText: String
+    public var buttonColor: UIColor?
+    public var onTapButton: (() -> Void)?
     
-    public init(headerTitle: String, image: String, title: String, description: String, buttonText: String, buttonColor: UIColor? = nil, onTapButton: (() -> Void)? = nil) {
+    public init(headerTitle: String = "", image: String, title: String, description: String, buttonText: String = "Oke", buttonColor: UIColor? = nil, onTapButton: (() -> Void)? = nil) {
         self.headerTitle = headerTitle
         self.image = image
         self.title = title

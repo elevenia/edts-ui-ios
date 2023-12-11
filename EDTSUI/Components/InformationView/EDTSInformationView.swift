@@ -10,9 +10,9 @@ import UIKit
 @IBDesignable
 public class EDTSInformationView: UIView {
     @IBOutlet weak var view: EDTSUIView!
-    @IBOutlet weak var icon: UIImageView!
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var moreLabel: UILabel!
+    @IBOutlet public weak var icon: UIImageView!
+    @IBOutlet public weak var label: UILabel!
+    @IBOutlet public weak var moreLabel: UILabel!
     
     public var parentVC: UIViewController?
     
@@ -64,12 +64,12 @@ public class EDTSInformationView: UIView {
     @IBInspectable
     public var trayTitle: String? = "Selengkapnya"
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
     }
     
-    required init?(coder: NSCoder) {
+   public required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupUI()
     }

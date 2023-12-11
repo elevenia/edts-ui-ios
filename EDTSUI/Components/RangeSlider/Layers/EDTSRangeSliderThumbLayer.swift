@@ -15,7 +15,7 @@ class EDTSRangeSliderThumbLayer: CALayer {
             setNeedsDisplay()
         }
     }
-    weak var rangeSlider: EDTSRangeSlider?
+    public weak var rangeSlider: EDTSRangeSlider?
     
     var strokeColor: UIColor = UIColor.white {
         didSet {

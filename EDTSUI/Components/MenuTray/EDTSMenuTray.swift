@@ -57,10 +57,10 @@ public class EDTSMenuTray: EDTSBaseTray, EDTSBaseTrayDelegate {
     }
     
     public struct Menu {
-        var id: Int = 0
-        var label: String
+        public var id: Int
+        public var label: String
         
-        public init(id: Int, label: String) {
+        public init(id: Int = 0, label: String) {
             self.id = id
             self.label = label
         }

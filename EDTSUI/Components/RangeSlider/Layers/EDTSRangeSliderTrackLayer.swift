@@ -9,7 +9,7 @@ import UIKit
 
 
 class EDTSRangeSliderTrackLayer: CALayer {
-    weak var rangeSlider: EDTSRangeSlider?
+    public weak var rangeSlider: EDTSRangeSlider?
     
     override func draw(in ctx: CGContext) {
         guard let slider = rangeSlider else {

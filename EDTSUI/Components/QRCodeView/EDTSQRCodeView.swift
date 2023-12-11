@@ -8,7 +8,7 @@
 import UIKit
 
 public class EDTSQRCodeView: UIView {
-    @IBOutlet weak var image: UIImageView!
+    @IBOutlet public weak var image: UIImageView!
         
     @IBInspectable
     public var textKey: String = "Kode"
