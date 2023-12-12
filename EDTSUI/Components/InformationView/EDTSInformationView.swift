@@ -9,7 +9,7 @@ import UIKit
 
 @IBDesignable
 public class EDTSInformationView: UIView {
-    @IBOutlet weak var view: EDTSUIView!
+    @IBOutlet public weak var view: EDTSUIView!
     @IBOutlet public weak var icon: UIImageView!
     @IBOutlet public weak var label: UILabel!
     @IBOutlet public weak var moreLabel: UILabel!

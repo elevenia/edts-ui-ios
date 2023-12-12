@@ -74,6 +74,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="kuz-Ck-tja" secondAttribute="trailing" id="GgB-Mv-Tie"/>
                 <constraint firstItem="kuz-Ck-tja" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Jeq-uU-e4C"/>

@@ -10,20 +10,20 @@ import UIKit
 
 /// `UIView` with additional functionalities for Interface Builder. Such as corner radius, border, shadow, etc.
 @IBDesignable
-class EDTSUIView: UIView {
+public class EDTSUIView: UIView {
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
     
     // MARK: - Corner Radius
     
     @IBInspectable
-    var cornerRadius: CGFloat {
+    public var cornerRadius: CGFloat {
         get {
             return self.layer.cornerRadius
         }
@@ -35,7 +35,7 @@ class EDTSUIView: UIView {
     // MARK: - Border
 
     @IBInspectable
-    var borderWidth: CGFloat {
+    public var borderWidth: CGFloat {
         get {
             return self.layer.borderWidth
         }
@@ -45,7 +45,7 @@ class EDTSUIView: UIView {
     }
     
     @IBInspectable
-    var borderColor: UIColor {
+    public var borderColor: UIColor {
         get {
             return UIColor(cgColor: self.layer.borderColor ?? UIColor.black.cgColor)
         }
@@ -57,7 +57,7 @@ class EDTSUIView: UIView {
     // MARK: - Shadow
     
     @IBInspectable
-    var shadowColor: UIColor {
+    public var shadowColor: UIColor {
         get {
             return UIColor(cgColor: self.layer.shadowColor ?? UIColor.black.cgColor)
         }
@@ -67,7 +67,7 @@ class EDTSUIView: UIView {
     }
     
     @IBInspectable
-    var shadowRadius: CGFloat {
+    public var shadowRadius: CGFloat {
         get {
             return self.layer.shadowRadius
         }
@@ -77,7 +77,7 @@ class EDTSUIView: UIView {
     }
     
     @IBInspectable
-    var shadowOpacity: Float {
+    public var shadowOpacity: Float {
         get {
             return self.layer.shadowOpacity
         }
@@ -87,7 +87,7 @@ class EDTSUIView: UIView {
     }
     
     @IBInspectable
-    var shadowOffsetX: CGFloat {
+    public var shadowOffsetX: CGFloat {
         get {
             return self.layer.shadowOffset.width
         }
@@ -101,7 +101,7 @@ class EDTSUIView: UIView {
     
     
     @IBInspectable
-    var shadowOffsetY: CGFloat {
+    public var shadowOffsetY: CGFloat {
         get {
             return self.layer.shadowOffset.height
         }

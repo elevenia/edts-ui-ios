@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "EDTSUI"
-  spec.version      = "0.1.14"
+  spec.version      = "0.1.15"
   spec.summary      = "EDTSUI is an iOS SDK for design user interface"
   spec.description  = "EDTSUI is an iOS SDK that help developer to design user interface based on EDTS Design System."
 
@@ -129,6 +129,7 @@ Pod::Spec.new do |spec|
     ss.resources = ['EDTSUI/Components/MenuTray/**/*.{xib}']
     ss.resource_bundle = { 'EDTSUI' => 'EDTSUI/*.xcassets' }
     ss.dependency "EDTSUI/Base"
+    ss.dependency "EDTSUI/FittedTableView"
   end
 
   spec.subspec 'AlertTray' do |ss|
