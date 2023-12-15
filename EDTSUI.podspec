@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "EDTSUI"
-  spec.version      = "0.1.15"
+  spec.version      = "0.1.16"
   spec.summary      = "EDTSUI is an iOS SDK for design user interface"
   spec.description  = "EDTSUI is an iOS SDK that help developer to design user interface based on EDTS Design System."
 
@@ -26,6 +26,11 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'Font' do |ss|
     ss.source_files = 'EDTSUI/Atoms/Font'
+  end
+
+  spec.subspec 'Assets' do |ss|
+    ss.source_files = 'EDTSUI/Assets'
+    ss.resource_bundle = { 'EDTSUIAssets' => 'EDTSUI/**/*.xcassets' }
   end
 
   spec.subspec 'OTP' do |ss|
@@ -93,7 +98,7 @@ Pod::Spec.new do |spec|
   spec.subspec 'DatePicker' do |ss|
     ss.source_files = 'EDTSUI/Components/DatePicker/**/*.{swift}'
     ss.resources = ['EDTSUI/Components/DatePicker/**/*.{xib}']
-    ss.resource_bundle = { 'EDTSUI' => 'EDTSUI/*.xcassets' }
+    ss.dependency "EDTSUI/Assets"
     ss.dependency "EDTSUI/Base"
     ss.dependency "EDTSUI/Extensions"
     ss.dependency "EDTSUI/Textfield"
@@ -119,7 +124,7 @@ Pod::Spec.new do |spec|
   spec.subspec 'QRCodeView' do |ss|
     ss.source_files = 'EDTSUI/Components/QRCodeView/**/*.{swift}'
     ss.resources = ['EDTSUI/Components/QRCodeView/**/*.{xib}']
-    ss.resource_bundle = { 'EDTSUI' => 'EDTSUI/*.xcassets' }
+    ss.dependency "EDTSUI/Assets"
     ss.dependency "EDTSUI/Base"
     ss.dependency "EDTSUI/Helpers"
   end
@@ -127,7 +132,7 @@ Pod::Spec.new do |spec|
   spec.subspec 'MenuTray' do |ss|
     ss.source_files = 'EDTSUI/Components/MenuTray/**/*.{swift}'
     ss.resources = ['EDTSUI/Components/MenuTray/**/*.{xib}']
-    ss.resource_bundle = { 'EDTSUI' => 'EDTSUI/*.xcassets' }
+    ss.dependency "EDTSUI/Assets"
     ss.dependency "EDTSUI/Base"
     ss.dependency "EDTSUI/FittedTableView"
   end
@@ -135,14 +140,14 @@ Pod::Spec.new do |spec|
   spec.subspec 'AlertTray' do |ss|
     ss.source_files = 'EDTSUI/Components/AlertTray'
     ss.resources = ['EDTSUI/Components/AlertTray/**/*.{xib}']
-    ss.resource_bundle = { 'EDTSUI' => 'EDTSUI/*.xcassets' }
+    ss.dependency "EDTSUI/Assets"
     ss.dependency "EDTSUI/Base"
   end
 
   spec.subspec 'InformationView' do |ss|
     ss.source_files = 'EDTSUI/Components/InformationView/**/*.{swift}'
     ss.resources = ['EDTSUI/Components/InformationView/**/*.{xib}']
-    ss.resource_bundle = { 'EDTSUI' => 'EDTSUI/*.xcassets' }
+    ss.dependency "EDTSUI/Assets"
     ss.dependency "EDTSUI/Base"
     ss.dependency "EDTSUI/Extensions"
     ss.dependency "EDTSUI/Helpers"
@@ -152,7 +157,7 @@ Pod::Spec.new do |spec|
   spec.subspec 'Options' do |ss|
     ss.source_files = 'EDTSUI/Components/Options/**/*.{swift}'
     ss.resources = ['EDTSUI/Components/Options/**/*.{xib}']
-    ss.resource_bundle = { 'EDTSUI' => 'EDTSUI/*.xcassets' }
+    ss.dependency "EDTSUI/Assets"
     ss.dependency "EDTSUI/Base"
     ss.dependency "EDTSUI/FittedCollectionView"
   end
