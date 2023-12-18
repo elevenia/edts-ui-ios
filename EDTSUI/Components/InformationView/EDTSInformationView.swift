@@ -15,9 +15,9 @@ public class EDTSInformationView: UIView {
     @IBOutlet public weak var moreLabel: UILabel!
     
     public var parentVC: UIViewController?
-    
     /// Use this closure to perform some actions on the tray, such as styling, etc.
     public var onShowTray: ((EDTSInformationViewTray) -> Void)?
+    public var onClickMoreButton: (() -> Void)?
     
     @IBInspectable var bgColor: UIColor? = nil {
         didSet {
@@ -111,6 +111,8 @@ public class EDTSInformationView: UIView {
             tray.contentLabel.setTextFromHTML(self.text)
             self.onShowTray?(tray)
         }
+
+        self.onClickMoreButton?()
     }
 }
 
