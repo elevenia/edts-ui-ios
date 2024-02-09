@@ -22,6 +22,7 @@ public protocol EDTSOnboardingDelegate {
     private var contentPositions = [CGFloat]()
     private var isResetDecelerating = false
     
+    public var isAutoResetOnLastPage: Bool = true
     public var delegate: EDTSOnboardingDelegate?
     
     @IBInspectable var titleFontName: String {
@@ -177,7 +178,7 @@ extension EDTSOnboarding: UIScrollViewDelegate {
         let pageWidth = scrollView.frame.width
         let currentPage = floor((scrollView.contentOffset.x-pageWidth/2)/pageWidth)+1
         
-        if scrollView.contentOffset.x > pageWidth && Int(currentPage) == (datas.count-1)  {
+        if scrollView.contentOffset.x > pageWidth && Int(currentPage) == (datas.count-1) && isAutoResetOnLastPage {
             pageControl.currentPage = 0
             isResetDecelerating = true
             scrollView.setContentOffset(CGPoint(x: 0, y: scrollView.frame.minY), animated: true)
