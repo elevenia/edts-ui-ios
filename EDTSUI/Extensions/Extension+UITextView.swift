@@ -31,7 +31,7 @@ extension UITextView {
         
         let mutableAttributedString = NSMutableAttributedString(attributedString: attributedString!)
             
-        self.attributedText = mutableAttributedString.trimmed()
+        self.attributedText = mutableAttributedString
     }
     
 }
