@@ -24,6 +24,14 @@ public protocol EDTSOTPDelegate {
     @IBOutlet weak var textField5: EDTSOTPDigit!
     @IBOutlet weak var textField6: EDTSOTPDigit!
     
+    @IBOutlet weak var containerUnderline: UIStackView!
+    @IBOutlet weak var underline1: UIImageView!
+    @IBOutlet weak var underline2: UIImageView!
+    @IBOutlet weak var underline3: UIImageView!
+    @IBOutlet weak var underline4: UIImageView!
+    @IBOutlet weak var underline5: UIImageView!
+    @IBOutlet weak var underline6: UIImageView!
+    
     public var delegate: EDTSOTPDelegate?
 
     @IBInspectable var sixDigit: Bool {
@@ -42,6 +50,17 @@ public protocol EDTSOTPDelegate {
         }
         set {
             isSecureEntry = newValue
+            setupContent()
+        }
+    }
+    
+    @IBInspectable var underlinedStyle: Bool {
+        get {
+            return isUnderlinedStyle
+        }
+        set {
+            isUnderlinedStyle = newValue
+            setupView()
             setupContent()
         }
     }
@@ -198,6 +217,7 @@ public protocol EDTSOTPDelegate {
     
     var isSixDigit = false
     var isSecureEntry = false
+    var isUnderlinedStyle = false
     
     var colorBorder = UIColor(red: 220.0/255.0, green: 222.0/255.0, blue: 227.0/255.0, alpha: 1.0)
     var colorBg = UIColor.clear
@@ -248,7 +268,6 @@ public protocol EDTSOTPDelegate {
         textField1.digitDelegate = self
         textField1.keyboardType = .numberPad
         textField1.layer.borderColor = borderColor.cgColor
-        textField1.layer.borderWidth = CGFloat(textfieldBorderWidth)
         textField1.layer.cornerRadius = CGFloat(textfieldCornerRadius)
         textField1.font = getFont()
         textField1.textColor = textColor
@@ -257,7 +276,6 @@ public protocol EDTSOTPDelegate {
         textField2.digitDelegate = self
         textField2.keyboardType = .numberPad
         textField2.layer.borderColor = borderColor.cgColor
-        textField2.layer.borderWidth = CGFloat(textfieldBorderWidth)
         textField2.layer.cornerRadius = CGFloat(textfieldCornerRadius)
         textField2.font = getFont()
         textField2.textColor = textColor
@@ -266,7 +284,6 @@ public protocol EDTSOTPDelegate {
         textField3.digitDelegate = self
         textField3.keyboardType = .numberPad
         textField3.layer.borderColor = borderColor.cgColor
-        textField3.layer.borderWidth = CGFloat(textfieldBorderWidth)
         textField3.layer.cornerRadius = CGFloat(textfieldCornerRadius)
         textField3.font = getFont()
         textField3.textColor = textColor
@@ -275,7 +292,6 @@ public protocol EDTSOTPDelegate {
         textField4.digitDelegate = self
         textField4.keyboardType = .numberPad
         textField4.layer.borderColor = borderColor.cgColor
-        textField4.layer.borderWidth = CGFloat(textfieldBorderWidth)
         textField4.layer.cornerRadius = CGFloat(textfieldCornerRadius)
         textField4.font = getFont()
         textField4.textColor = textColor
@@ -284,7 +300,6 @@ public protocol EDTSOTPDelegate {
         textField5.digitDelegate = self
         textField5.keyboardType = .numberPad
         textField5.layer.borderColor = borderColor.cgColor
-        textField5.layer.borderWidth = CGFloat(textfieldBorderWidth)
         textField5.layer.cornerRadius = CGFloat(textfieldCornerRadius)
         textField5.font = getFont()
         textField5.textColor = textColor
@@ -293,19 +308,53 @@ public protocol EDTSOTPDelegate {
         textField6.digitDelegate = self
         textField6.keyboardType = .numberPad
         textField6.layer.borderColor = borderColor.cgColor
-        textField6.layer.borderWidth = CGFloat(textfieldBorderWidth)
         textField6.layer.cornerRadius = CGFloat(textfieldCornerRadius)
         textField6.font = getFont()
         textField6.textColor = textColor
+        
+        underline1.backgroundColor = borderColor
+        underline2.backgroundColor = borderColor
+        underline3.backgroundColor = borderColor
+        underline4.backgroundColor = borderColor
+        underline5.backgroundColor = borderColor
+        underline6.backgroundColor = borderColor
+        
+        if isUnderlinedStyle == true {
+            textField1.layer.borderWidth = 0
+            textField2.layer.borderWidth = 0
+            textField3.layer.borderWidth = 0
+            textField4.layer.borderWidth = 0
+            textField5.layer.borderWidth = 0
+            textField6.layer.borderWidth = 0
+        } else {
+            textField1.layer.borderWidth = CGFloat(textfieldBorderWidth)
+            textField2.layer.borderWidth = CGFloat(textfieldBorderWidth)
+            textField3.layer.borderWidth = CGFloat(textfieldBorderWidth)
+            textField4.layer.borderWidth = CGFloat(textfieldBorderWidth)
+            textField5.layer.borderWidth = CGFloat(textfieldBorderWidth)
+            textField6.layer.borderWidth = CGFloat(textfieldBorderWidth)
+        }
     }
     
     private func setupContent() {
         if isSixDigit {
             textField5.isHidden = false
             textField6.isHidden = false
+            
+            underline5.isHidden = false
+            underline6.isHidden = false
         } else {
             textField5.isHidden = true
             textField6.isHidden = true
+            
+            underline5.isHidden = true
+            underline6.isHidden = true
+        }
+        
+        if isUnderlinedStyle == true {
+            containerUnderline.isHidden = false
+        } else {
+            containerUnderline.isHidden = true
         }
         
         textField1.isSecureTextEntry = isSecureEntry
@@ -409,12 +458,14 @@ public protocol EDTSOTPDelegate {
     }
     
     public func setDefault() {
-        setDefault(textfield: textField1)
-        setDefault(textfield: textField2)
-        setDefault(textfield: textField3)
-        setDefault(textfield: textField4)
-        setDefault(textfield: textField5)
-        setDefault(textfield: textField6)
+        if isUnderlinedStyle != true {
+            setDefault(textfield: textField1)
+            setDefault(textfield: textField2)
+            setDefault(textfield: textField3)
+            setDefault(textfield: textField4)
+            setDefault(textfield: textField5)
+            setDefault(textfield: textField6)
+        }
     }
     
     private func setDefault(textfield: EDTSOTPDigit) {
@@ -423,12 +474,14 @@ public protocol EDTSOTPDelegate {
     }
     
     public func setError() {
-        setError(textfield: textField1)
-        setError(textfield: textField2)
-        setError(textfield: textField3)
-        setError(textfield: textField4)
-        setError(textfield: textField5)
-        setError(textfield: textField6)
+        if isUnderlinedStyle != true {
+            setError(textfield: textField1)
+            setError(textfield: textField2)
+            setError(textfield: textField3)
+            setError(textfield: textField4)
+            setError(textfield: textField5)
+            setError(textfield: textField6)
+        }
     }
     
     private func setError(textfield: EDTSOTPDigit) {
@@ -437,12 +490,14 @@ public protocol EDTSOTPDelegate {
     }
     
     public func setAutofill() {
-        setAutofill(textfield: textField1)
-        setAutofill(textfield: textField2)
-        setAutofill(textfield: textField3)
-        setAutofill(textfield: textField4)
-        setAutofill(textfield: textField5)
-        setAutofill(textfield: textField6)
+        if isUnderlinedStyle != true {
+            setAutofill(textfield: textField1)
+            setAutofill(textfield: textField2)
+            setAutofill(textfield: textField3)
+            setAutofill(textfield: textField4)
+            setAutofill(textfield: textField5)
+            setAutofill(textfield: textField6)
+        }
     }
     
     private func setAutofill(textfield: EDTSOTPDigit) {
@@ -451,12 +506,14 @@ public protocol EDTSOTPDelegate {
     }
     
     public func setSuccess() {
-        setSuccess(textfield: textField1)
-        setSuccess(textfield: textField2)
-        setSuccess(textfield: textField3)
-        setSuccess(textfield: textField4)
-        setSuccess(textfield: textField5)
-        setSuccess(textfield: textField6)
+        if isUnderlinedStyle != true {
+            setSuccess(textfield: textField1)
+            setSuccess(textfield: textField2)
+            setSuccess(textfield: textField3)
+            setSuccess(textfield: textField4)
+            setSuccess(textfield: textField5)
+            setSuccess(textfield: textField6)
+        }
     }
     
     private func setSuccess(textfield: EDTSOTPDigit) {
@@ -465,12 +522,14 @@ public protocol EDTSOTPDelegate {
     }
     
     public func setDisabled() {
-        setDisabled(textfield: textField1)
-        setDisabled(textfield: textField2)
-        setDisabled(textfield: textField3)
-        setDisabled(textfield: textField4)
-        setDisabled(textfield: textField5)
-        setDisabled(textfield: textField6)
+        if isUnderlinedStyle != true {
+            setDisabled(textfield: textField1)
+            setDisabled(textfield: textField2)
+            setDisabled(textfield: textField3)
+            setDisabled(textfield: textField4)
+            setDisabled(textfield: textField5)
+            setDisabled(textfield: textField6)
+        }
     }
     
     private func setDisabled(textfield: EDTSOTPDigit) {
@@ -479,12 +538,14 @@ public protocol EDTSOTPDelegate {
     }
     
     public func setFocused() {
-        setFocused(textfield: textField1)
-        setFocused(textfield: textField2)
-        setFocused(textfield: textField3)
-        setFocused(textfield: textField4)
-        setFocused(textfield: textField5)
-        setFocused(textfield: textField6)
+        if isUnderlinedStyle != true {
+            setFocused(textfield: textField1)
+            setFocused(textfield: textField2)
+            setFocused(textfield: textField3)
+            setFocused(textfield: textField4)
+            setFocused(textfield: textField5)
+            setFocused(textfield: textField6)
+        }
     }
     
     private func setFocused(textfield: EDTSOTPDigit) {
