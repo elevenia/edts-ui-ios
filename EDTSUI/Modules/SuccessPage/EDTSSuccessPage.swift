@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol EDTSSuccessPageDelegate {
+public protocol EDTSSuccessPageDelegate: AnyObject {
     func onButtonFirstTapped()
     func onButtonSecondTapped()
 }
@@ -32,7 +32,7 @@ public class EDTSSuccessPage: UIViewController {
     @IBOutlet weak var imgBottomInfoHeightAnchor: NSLayoutConstraint!
     
     public var style: EDTSSuccessPageStyle?
-    public var delegate: EDTSSuccessPageDelegate?
+    public weak var delegate: EDTSSuccessPageDelegate?
     
     public init() {
         super.init(nibName: "EDTSSuccessPage", bundle: Bundle(for: EDTSSuccessPage.self))

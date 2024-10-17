@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol EDTSOTPDelegate {
+public protocol EDTSOTPDelegate: AnyObject {
     func onOTPCompleted(string: String)
     func onOTPIncomplete()
 }
@@ -32,7 +32,7 @@ public protocol EDTSOTPDelegate {
     @IBOutlet weak var underline5: UIImageView!
     @IBOutlet weak var underline6: UIImageView!
     
-    public var delegate: EDTSOTPDelegate?
+    public weak var delegate: EDTSOTPDelegate?
 
     @IBInspectable var sixDigit: Bool {
         get {

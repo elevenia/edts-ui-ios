@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol EDTSOnboardingDelegate {
+public protocol EDTSOnboardingDelegate: AnyObject {
     func onOnboardingScrolled(index: Int)
     func onOnboardingBeginScrolling()
 }
@@ -23,7 +23,7 @@ public protocol EDTSOnboardingDelegate {
     private var isResetDecelerating = false
     
     public var isAutoResetOnLastPage: Bool = true
-    public var delegate: EDTSOnboardingDelegate?
+    public weak var delegate: EDTSOnboardingDelegate?
     
     @IBInspectable var titleFontName: String {
         get {
@@ -145,7 +145,7 @@ public protocol EDTSOnboardingDelegate {
         
         var index = 0
         for item in datas {
-            let content = EDTSOnboardingContent(frame: CGRect(x: scrollView.frame.size.width * CGFloat(index), y: 0, width: scrollView.frame.size.width, height: scrollView.frame.size.height), data: item, titleFont: titleFont, titleSize: titleSize, titleColor: titleColor, messageFont: messageFont, messageSize: messageSize, messageColor: messageColor, contentAlignment: contentAlignment)
+            let content = EDTSOnboardingContent(frame: CGRect(x: scrollView.frame.size.width * CGFloat(index), y: scrollView.frame.size.height / 4, width: scrollView.frame.size.width, height: scrollView.frame.size.height), data: item, titleFont: titleFont, titleSize: titleSize, titleColor: titleColor, messageFont: messageFont, messageSize: messageSize, messageColor: messageColor, contentAlignment: contentAlignment)
             
             
             scrollView.addSubview(content)

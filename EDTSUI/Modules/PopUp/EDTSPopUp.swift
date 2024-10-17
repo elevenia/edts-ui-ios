@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol EDTSPopUpDelegate {
+public protocol EDTSPopUpDelegate: AnyObject {
     func onActionFirstTapped()
     func onActionSecondTapped()
     func onActionLeftTapped()
@@ -36,7 +36,7 @@ public class EDTSPopUp: UIViewController {
     @IBOutlet public weak var btnSecond: UIButton!
     
     public var style: EDTSPopUpStyle?
-    public var delegate: EDTSPopUpDelegate?
+    public weak var delegate: EDTSPopUpDelegate?
     
     public init() {
         super.init(nibName: "EDTSPopUp", bundle: Bundle(for: EDTSPopUp.self))
