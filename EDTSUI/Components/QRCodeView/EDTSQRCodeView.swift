@@ -20,7 +20,7 @@ public class EDTSQRCodeView: UIView {
         }
     }
     
-    public var parentVC: UIViewController?
+    public weak var parentVC: UIViewController?
 
     // Use this closure to perform some actions on the tray, such as styling, etc.
     public var onShowTray: ((EDTSQRCodeViewTray) -> Void)?

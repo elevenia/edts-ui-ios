@@ -14,7 +14,7 @@ public class EDTSInformationView: UIView {
     @IBOutlet public weak var label: UILabel!
     @IBOutlet public weak var moreLabel: UILabel!
     
-    public var parentVC: UIViewController?
+    public weak var parentVC: UIViewController?
     /// Use this closure to perform some actions on the tray, such as styling, etc.
     public var onShowTray: ((EDTSInformationViewTray) -> Void)?
     public var onClickMoreButton: (() -> Void)?
